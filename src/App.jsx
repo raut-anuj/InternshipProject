@@ -1,9 +1,17 @@
-export default function App() {
+import LogoSlider from "./components/LogoSlider";
+import Card2 from "./components/Card";
+
+function App() {
   return (
-    <div className="h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-green-600">
-        Tailwind Working.
-      </h1>
+    <div>
+      <LogoSlider />
+      <Card2
+        users="70+ Crore"
+        documents="850+ Crore"
+        title="DigiLocker"
+      />
     </div>
-  )
+  );
 }
+
+export default App;
