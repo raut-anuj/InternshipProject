@@ -1,19 +1,13 @@
 import { Users, FileDown } from "lucide-react";
 
-export default function Card2({
-  users,
-  documents,
-  title,
+export default function Card({
+      users,
+      documents,
+      title,
 }) {
+
   return (
-    <div className="bg-[#f3f0fd] rounded-3xl 
-                flex flex-col lg:flex-row
-                items-center justify-between
-                p-5
-                mb-7
-                max-w-150
-                mx-auto
-                gap-2">
+    <div className="bg-[#f3f0fd] rounded-3xl flex flex-col lg:flex-row items-center justify-between p-5 mb-7 max-w-150 mx-auto gap-2">
 
       <div className="space-y-7">
 
@@ -47,7 +41,6 @@ export default function Card2({
 
       </div>
 
-      {/* Right Section */}
       <div className="relative">
         <div className="w-[180px] h-[180px] rounded-full bg-white flex items-center justify-center shadow-sm">
 

@@ -7,11 +7,6 @@ import LogoCard from "./LogoCard";
 //   "Tata Play",
 //   "Max Life",
 //   "HDFC Bank",
-//   "IDFC Bank",
-//   "Anuj Kumar",
-//   "Rahul Kumar",
-//   "Union Bank",
-//   "HDFC Bank",
 // ];
 
 const logos = [
