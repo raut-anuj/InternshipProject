@@ -1,19 +1,5 @@
 import LogoCard from "./LogoCard";
 
-// const logos = [
-//   "PaperBoat",
-//   "IIFL",
-//   "SpiceJet",
-//   "Tata Play",
-//   "Max Life",
-//   "HDFC Bank",
-//   "IDFC Bank",
-//   "Anuj Kumar",
-//   "Rahul Kumar",
-//   "Union Bank",
-//   "HDFC Bank",
-// ];
-
 const logos = [
   "/logo/1.png",
   "/logo/2.png",

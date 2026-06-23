@@ -1,17 +1,27 @@
-import LogoSlider from "./components/LogoSlider";
-import Card2 from "./components/Card";
+import User from "./components/User"
+import DigiCard from "./components/DigiCard"
+import LogoSlider from "./components/LogoSlider"
+import Animation  from "./pages/Animation";
+import CardStackCarousel from "./components/CardStackCarousel";
+import Carousel from "./components/Carousel";
+import NameSlider from "./components/NameSlider";
+import Slider from "./components/Slider";
+
+const data = ["Card 1", "Card 2", "Card 3", "Card 4", "Card 1", "Card 2", "Card 3", "Card 4"];
 
 function App() {
   return (
-    <div>
-      <LogoSlider />
-      <Card2
-        users="70+ Crore"
-        documents="850+ Crore"
-        title="DigiLocker"
-      />
-    </div>
-  );
-}
+     <div>
+          {/* <NameSlider /> */}
+          {/* <CardStackCarousel items={data} /> */}
+          {/* <Carousel items={data} /> */}
+          {/* <LogoSlider /> */}
+          {/* <Animation  />  */}
+          {/* <Slider /> */}
+        
+       {/* <DigiCard />    */}
 
+     </div> 
+  )
+}
 export default App;

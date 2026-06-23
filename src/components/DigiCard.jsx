@@ -1,6 +1,6 @@
 import { Users, FileDown } from "lucide-react";
 
-export default function Card2({
+export default function DigiCard({
   users,
   documents,
   title,
@@ -49,7 +49,7 @@ export default function Card2({
 
       {/* Right Section */}
       <div className="relative">
-        <div className="w-[180px] h-[180px] rounded-full bg-white flex items-center justify-center shadow-sm">
+        <div className="w-45 h-45 not-first-of-type:rounded-full bg-white flex items-center justify-center shadow-sm">
 
             <h3 className="text-violet-600 font-semibold text-xl">
               {title}
