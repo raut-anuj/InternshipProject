@@ -13,9 +13,10 @@
 .marquee {
   display: flex;
   width: max-content;
-  animation: marquee 10s linear infinite;
+  animation: marquee 5s linear infinite;
   will-change: transform;
 }
+<<<<<<< HEAD
 
 
 @layer utilities {
@@ -28,3 +29,33 @@
     animation: marquee 10s linear infinite;
   }
 }
+=======
+/* 
+@keyframes marquee
+
+ke saath.
+
+Matlab browser samajhta hai:
+
+"Achha, mujhe marquee animation chalani hai." */
+
+
+/* 5s
+
+Matlab:
+
+5 seconds
+
+Animation start se end tak pahunchne me 5 second legi. */
+
+/* 
+linear
+
+Matlab speed constant rahegi. */
+
+/* Kabhi band nahi hogi.
+
+Loop me chalti rahegi. */
+
+/* will-change: transform browser optimization ke liye use hota hai taaki transform-based animation zyada smooth chale. */
+>>>>>>> ce54efb186a258f253bdc99a50eb586695c68393

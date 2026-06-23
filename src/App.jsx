@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import User from "./components/User"
 import DigiCard from "./components/DigiCard"
 import LogoSlider from "./components/LogoSlider"
@@ -20,6 +21,24 @@ function App() {
           {/* <Slider /> */}
         
        {/* <DigiCard />    */}
+=======
+import LogoSlider from "./components/LogoSlider";
+import Card from "./components/Card";
+
+function App() {
+  return (
+    <div>
+      <LogoSlider />
+      
+      <Card
+        users="70+ Crore"
+        documents="850+ Crore"
+        title="DigiLocker" 
+      />
+    </div>
+  );
+}
+>>>>>>> ce54efb186a258f253bdc99a50eb586695c68393
 
      </div> 
   )

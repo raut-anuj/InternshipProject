@@ -1,19 +1,20 @@
 import { Users, FileDown } from "lucide-react";
 
+<<<<<<< HEAD:src/components/DigiCard.jsx
 export default function DigiCard({
   users,
   documents,
   title,
+=======
+export default function Card({
+      users,
+      documents,
+      title,
+>>>>>>> ce54efb186a258f253bdc99a50eb586695c68393:src/components/Card.jsx
 }) {
+
   return (
-    <div className="bg-[#f3f0fd] rounded-3xl 
-                flex flex-col lg:flex-row
-                items-center justify-between
-                p-5
-                mb-7
-                max-w-150
-                mx-auto
-                gap-2">
+    <div className="bg-[#f3f0fd] rounded-3xl flex flex-col lg:flex-row items-center justify-between p-5 mb-7 max-w-150 mx-auto gap-2">
 
       <div className="space-y-7">
 
@@ -47,7 +48,6 @@ export default function DigiCard({
 
       </div>
 
-      {/* Right Section */}
       <div className="relative">
         <div className="w-45 h-45 not-first-of-type:rounded-full bg-white flex items-center justify-center shadow-sm">
 

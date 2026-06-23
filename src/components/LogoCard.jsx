@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+=======
+// { src } Kya Hai?
+// function LogoCard({ src })
+
+// Ye props destructuring hai.
+
+
+// shrink-0
+
+// bolta hai:
+
+// Is element ko compress mat karo.
+
+// Ye component prop ke through aane wale text ko large heading ke form me display karta hai aur marquee animation ke items ko render karne ke liye use hota hai.
+
+// export default function LogoCard({ src }) {
+//   return (
+//     <div className="shrink-0 px-10">
+//       <h2 className="text-3xl font-semibold">
+//         {src}
+//       </h2>
+//     </div>
+//   );
+// }
+
+>>>>>>> ce54efb186a258f253bdc99a50eb586695c68393
 export default function LogoCard({ src }) {
   return (
     <div className="shrink-0 px-4">
