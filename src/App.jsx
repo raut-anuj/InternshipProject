@@ -6,36 +6,22 @@ import CardStackCarousel from "./components/CardStackCarousel";
 import Carousel from "./components/Carousel";
 import NameSlider from "./components/NameSlider";
 import Slider from "./components/Slider";
+import FadingLogoSlider from "./components/FadingLogoSlider";
 
 const data = ["Card 1", "Card 2", "Card 3", "Card 4", "Card 1", "Card 2", "Card 3", "Card 4"];
 
 function App() {
   return (
      <div>
-          {/* <NameSlider /> */}
-          {/* <CardStackCarousel items={data} /> */}
-          {/* <Carousel items={data} /> */}
-          {/* <LogoSlider /> */}
-          {/* <Animation  />  */}
-          {/* <Slider /> */}
+          <FadingLogoSlider />
+          <NameSlider />
+          {<CardStackCarousel items={data} />}
+          {<Carousel items={data} />}
+          <LogoSlider />
+          <Animation  /> 
+          <Slider />
         
        {/* <DigiCard />    */}
-import LogoSlider from "./components/LogoSlider";
-import Card from "./components/Card";
-
-function App() {
-  return (
-    <div>
-      <LogoSlider />
-      
-      <Card
-        users="70+ Crore"
-        documents="850+ Crore"
-        title="DigiLocker" 
-      />
-    </div>
-  );
-}
 
      </div> 
   )

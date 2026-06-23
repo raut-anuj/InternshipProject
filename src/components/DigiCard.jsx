@@ -1,16 +1,9 @@
 import { Users, FileDown } from "lucide-react";
 
-<<<<<<< HEAD:src/components/DigiCard.jsx
 export default function DigiCard({
   users,
   documents,
   title,
-=======
-export default function Card({
-      users,
-      documents,
-      title,
->>>>>>> ce54efb186a258f253bdc99a50eb586695c68393:src/components/Card.jsx
 }) {
 
   return (

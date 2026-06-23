@@ -1,17 +1,5 @@
 import LogoCard from "./LogoCard";
 
-<<<<<<< HEAD
-=======
-// const logos = [
-//   "PaperBoat",
-//   "IIFL",
-//   "SpiceJet",
-//   "Tata Play",
-//   "Max Life",
-//   "HDFC Bank",
-// ];
-
->>>>>>> ce54efb186a258f253bdc99a50eb586695c68393
 const logos = [
   "/logo/1.png",
   "/logo/2.png",
