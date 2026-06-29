@@ -10,20 +10,22 @@ const Skeleton = () => {
 
   if (isLoading) {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
-        {Array.from({ length: 4 }).map((_, index) => <SkeletonCard key={index} />)}
-      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center p-6">
+      {Array.from({ length: 6 }).map((_, index) => (
+        <SkeletonCard key={index} />
+      ))}
+    </div>
     );
   }
 
   if (isError) return <p>Error loading data!</p>;
 
-  // Helper function to find specific data
   const getVal = (prop) => users.find(item => item.property === prop);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
-      {/* 1. User Count (Total length) */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center p-2">
+
+      {/* 1. Active User Count */}
       <Card 
         title="Active User Count" 
         obj={getVal("active_user_count")}  
@@ -32,19 +34,33 @@ const Skeleton = () => {
       {/* 2. Ministry Count */}
       <Card 
         title="Ministry Count" 
-        obj={getVal("total_duration")} 
+        obj={getVal("ministry_count")} 
       />
 
-      {/* 3. Organization Count
-      <Card title="Organization Count" value={getVal("organization_count")?.value || 0} unit="" /> */}
+      {/* 3. Organization Count */}
+      <Card 
+      title="organization count" 
+      obj={getVal("organization_count")}
+      />
 
-      {/* 4. Total Meetings
+      {/* 4. Meeting Attendees Count */}
+      <Card 
+      title=" Meeting Attendees Count" 
+      obj={getVal("meeting_attendees_count")}
+      />    
+
+      {/* 5. Total Duration */}
+      <Card 
+      title="Total Duration" 
+      obj={getVal("total_duration")}
+      />    
+
+      {/* 6. Total Meetings */}
       <Card 
       title="Total Meetings" 
-      value={getVal("total_meetings")?.value || 0} 
-      suffix={getVal("total_meetings")?.suffix || ""} 
-      />    
-       */}
+      obj={getVal("total_meetings")}
+      />        
+
     </div>
   );
 };

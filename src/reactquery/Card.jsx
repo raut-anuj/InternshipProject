@@ -4,15 +4,14 @@ import { useEffect } from "react";
 
 const Card = ({ title, obj, suffix = null }) => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
-  
+
   const numericValue = obj.value;
   const isInteger = numericValue % 1 === 0;
-  
   const count = useMotionValue(isInteger ? 0 : 0.00);
 
   const animatedDisplay = useTransform(count, (latest) => {
     const formattedValue = isInteger ? Math.round(latest) : latest.toFixed(2);
-    const safeSuffix = suffix ? suffix : obj.suffix;
+    const safeSuffix = suffix ?? obj.suffix;
     return `${formattedValue}${safeSuffix}+`; 
   });
 
@@ -29,13 +28,13 @@ const Card = ({ title, obj, suffix = null }) => {
   }, [inView, numericValue, count, isInteger]);
 
   return (
-    <motion.div
+      <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      className="rounded-xl border p-6 shadow-md bg-white hover:shadow-lg transition-shadow"
+      className="w-[260px] rounded-xl border shadow-md bg-white hover:shadow-lg transition-shadow px-8 py-8"
     >
-      <h2 className="text-sm font-semibold text-gray-500 uppercase mb-2">
+      <h2 className="text-sm font-semibold text-gray-500 uppercase mb-3">
         {title}
       </h2>
       
