@@ -11,7 +11,6 @@ const UserCarousel = () => {
   } = useUsers();
 
   if (isLoading) {
-    // FIX: Loading state ko fixed height de di hai taaki jump na aaye
     return (
       <div className="h-[182px] w-full flex items-center justify-center">
         <p className="animate-pulse text-gray-500 font-medium">Loading Carousel...</p>
@@ -20,7 +19,6 @@ const UserCarousel = () => {
   }
 
   if (isError) {
-    // FIX: Error state ko bhi same height de di
     return (
       <div className="h-[182px] w-full flex items-center justify-center">
         <p className="text-red-500">{error.message}</p>

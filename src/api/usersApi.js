@@ -1,11 +1,13 @@
 export const fetchUsers = async () => {
-  
-  const response = await fetch(
-    "https://jsonplaceholder.typicode.com/users"
-  );
+  const response = await fetch("/api/vmeet/test_external.json");
 
-  if(!response.ok)
-    throw new Error("Failed to load")
+  // Error check hamesha json() read karne se pehle karo
+  if (!response.ok) {
+    throw new Error("Failed to load");
+  }
+
+  const result = await response.json();
   
-  return response.json();
+  // Ab sirf result ko return karo
+  return result; 
 };

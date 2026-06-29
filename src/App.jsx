@@ -1,22 +1,12 @@
-import UserCarousel from "./components/UserCarousel";
+import Skeleton from "./reactquery/Skeleton";
 
 function App() {
   return (
-    <div className="px-9 mt-7">
-      <UserCarousel />
+
+    <div>
+      <Skeleton />
     </div>
   );
 }
 
 export default App;
-// {/* {<SpotlightBrandSlider  /> } */}
-//            {/* {<AdvancedDualSlider />} */}
-//            {/* {<FadingLogoSlider items={data}/>} */}
-//            {/* {<NameSlider />} */}
-//            {/* {<BrandSlider />} */}
-//            {/* {<Carousel items={data} />} */}
-//            {/* {<LogoSlider />} */}
-//            {/* {<Animation  /> } */}
-//            {/* {<Slider />} */}
-//            {/* {<GovtStyleSlider />} */}
-//            {/* {<DigiCard />   } */}
