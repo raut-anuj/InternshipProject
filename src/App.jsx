@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Skeleton from "./reactquery/Skeleton";
-import SkeletonHolder from "./reactquery2/SkeletonHolder";
+import SkeletonHolder from "./cardHolder/SkeletonHolder";
+
 function Home() {
   return (
     <div>
-      <Skeleton />
+      {/* <Skeleton /> */}
       <SkeletonHolder />
     </div>
   );

@@ -39,8 +39,6 @@ const Skeleton = () => {
   const getVal = (prop) =>
     users.find((item) => item.property === prop);
 
-  // ---------------- Loading ----------------
-
   if (isLoading) {
     return (
       <Row className="justify-content-center align-items-center stats-row g-0">
@@ -55,7 +53,6 @@ const Skeleton = () => {
 
   if (isError) return <p>Error loading data!</p>;
 
-  // ---------------- Actual Cards ----------------
 
   return (
     <Row className="justify-content-center align-items-center stats-row g-0">

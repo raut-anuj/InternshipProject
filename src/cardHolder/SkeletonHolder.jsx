@@ -5,7 +5,7 @@ import CardData from "./CardData";
 import "./reactquery2.css";
 
 const SkeletonHolder = () => {
-  const { data, isLoading, isError } = useUsers();
+  const { data, isLoading } = useUsers();
 
   const users = data?.data || [];
 
@@ -27,10 +27,8 @@ const SkeletonHolder = () => {
     );
   }
 
-  if (isError) return <p>Error loading data!</p>;
-
   const getVal = (prop) =>
-    users.find((item) => item.property === prop);
+    users?.find((item) => item.property === prop);
 
   return (
     <Row className="justify-content-center g-4 holder-row">

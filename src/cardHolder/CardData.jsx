@@ -2,7 +2,7 @@ import { motion, animate } from "../utils/framerMotion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import "./reactquery2.css";
-
+ 
 const CardData = ({ title, obj, suffix = null }) => {
   const { ref, inView } = useInView({
     triggerOnce: false,
