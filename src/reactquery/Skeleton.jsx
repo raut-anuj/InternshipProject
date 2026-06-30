@@ -1,67 +1,81 @@
+import { Row, Col } from "react-bootstrap";
 import { useUsers } from "../hook/useUsers";
 import SkeletonCard from "./SkeletonCard";
 import Card from "./Card";
+import "./reactquery.css";
 
 const Skeleton = () => {
   const { data, isLoading, isError } = useUsers();
-  
-  // API ka data
+
   const users = data?.data || [];
+
+  const cards = [
+    {
+      title: "Active User Count",
+      property: "active_user_count",
+    },
+    {
+      title: "Ministry Count",
+      property: "ministry_count",
+    },
+    {
+      title: "Organization Count",
+      property: "organization_count",
+    },
+    {
+      title: "Meeting Attendees Count",
+      property: "meeting_attendees_count",
+    },
+    {
+      title: "Total Duration",
+      property: "total_duration",
+    },
+    {
+      title: "Total Meetings",
+      property: "total_meetings",
+    },
+  ];
+
+  const getVal = (prop) =>
+    users.find((item) => item.property === prop);
+
+  // ---------------- Loading ----------------
 
   if (isLoading) {
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center p-6">
-      {Array.from({ length: 6 }).map((_, index) => (
-        <SkeletonCard key={index} />
-      ))}
-    </div>
+      <Row className="justify-content-center align-items-center stats-row g-0">
+        {cards.map((_, index) => (
+          <Col key={index} xs="auto">
+            <SkeletonCard />
+          </Col>
+        ))}
+      </Row>
     );
   }
 
   if (isError) return <p>Error loading data!</p>;
 
-  const getVal = (prop) => users.find(item => item.property === prop);
+  // ---------------- Actual Cards ----------------
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center p-2">
+    <Row className="justify-content-center align-items-center stats-row g-0">
+      {cards.map((item, index) => (
+        <Col
+          key={item.property}
+          xs="auto"
+          className="d-flex align-items-center"
+        >
+          <Card
+            title={item.title}
+            obj={getVal(item.property)}
+          />
 
-      {/* 1. Active User Count */}
-      <Card 
-        title="Active User Count" 
-        obj={getVal("active_user_count")}  
-      />
-
-      {/* 2. Ministry Count */}
-      <Card 
-        title="Ministry Count" 
-        obj={getVal("ministry_count")} 
-      />
-
-      {/* 3. Organization Count */}
-      <Card 
-      title="organization count" 
-      obj={getVal("organization_count")}
-      />
-
-      {/* 4. Meeting Attendees Count */}
-      <Card 
-      title=" Meeting Attendees Count" 
-      obj={getVal("meeting_attendees_count")}
-      />    
-
-      {/* 5. Total Duration */}
-      <Card 
-      title="Total Duration" 
-      obj={getVal("total_duration")}
-      />    
-
-      {/* 6. Total Meetings */}
-      <Card 
-      title="Total Meetings" 
-      obj={getVal("total_meetings")}
-      />        
-
-    </div>
+          {index !== cards.length - 1 && (
+            <div className="stats-divider"></div>
+          )}
+        </Col>
+      ))}
+    </Row>
   );
 };
 

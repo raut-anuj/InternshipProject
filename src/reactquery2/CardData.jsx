@@ -1,18 +1,18 @@
 import { motion, animate } from "../utils/framerMotion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import "./reactquery.css";
+import "./reactquery2.css";
 
-const Card = ({ title, obj, suffix = null }) => {
+const CardData = ({ title, obj, suffix = null }) => {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3,
   });
 
-  const [count, setCount] = useState(0);
-
   const numericValue = obj?.value || 0;
   const isInteger = numericValue % 1 === 0;
+
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (!inView) {
@@ -23,8 +23,8 @@ const Card = ({ title, obj, suffix = null }) => {
     const controls = animate(0, numericValue, {
       duration: 3,
       ease: "easeOut",
-      onUpdate(value) {
-        setCount(value);
+      onUpdate: (latest) => {
+        setCount(latest);
       },
     });
 
@@ -35,20 +35,27 @@ const Card = ({ title, obj, suffix = null }) => {
     ? Math.round(count)
     : count.toFixed(2);
 
+  const safeSuffix = suffix ?? obj?.suffix ?? "";
+
   return (
-    <motion.div ref={ref} className="stats-card">
-      <div className="stats-number-wrapper">
-        <span className="stats-number">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 20 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+      className="holder-card"
+    >
+      <div className="holder-number-wrapper">
+        <span className="holder-number">
           {formattedValue}
-          {suffix ?? obj?.suffix}+
+          {safeSuffix}+
         </span>
       </div>
 
-      <h2 className="stats-title">
+      <h2 className="holder-title">
         {title}
       </h2>
     </motion.div>
   );
 };
 
-export default Card;
+export default CardData;

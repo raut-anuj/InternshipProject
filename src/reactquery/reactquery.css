@@ -1,0 +1,90 @@
+.stats-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0.5rem;
+}
+
+.stats-card {
+  width: 220px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;   /* center ki jagah ye use karo */
+}
+
+.stats-number-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-number {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.stats-title {
+  margin-top: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6c757d;
+
+  /* Add these */
+  line-height: 1.4;
+  min-height: 34px;      /* sab titles ki same height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-divider {
+  width: 1px;
+  height: 75px;
+  background: #e6e6e6;
+  margin: 0;
+}
+
+.stats-row > .col-auto {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.skeleton-card {
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-number {
+  width: 80px;
+  height: 32px;
+  border-radius: 4px;
+  background: #e5e5e5;
+  margin-bottom: 12px;
+}
+
+.skeleton-title {
+  width: 96px;
+  height: 12px;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
