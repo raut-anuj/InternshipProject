@@ -14,7 +14,7 @@ export default function WebsiteStats() {
             <Row className="holder-row holder-placeholder-row justify-content-center">
                 {Array.from({ length: 6 }).map((_, index) => (
                     <Col
-                        key={stats-placeholder-${index}}
+                        key={`stats-placeholder-${index}`}
                         xs="auto"
                         className="holder-placeholder-col d-flex justify-content-center"
                     >
@@ -103,5 +103,3 @@ export default function WebsiteStats() {
         </Row>
     );
 };
-
-
