@@ -1,32 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Skeleton from "./reactquery/Skeleton";
-import SkeletonHolder from "./cardHolder/SkeletonHolder";
-
-function Home() {
-  return (
-    <div>
-      {/* <Skeleton /> */}
-      <SkeletonHolder />
-    </div>
-  );
-}
-
-function OnlySkeletonHolder() {
-  return (
-    <div>
-      <SkeletonHolder />
-    </div>
-  );
-}
+import SkeletonPlaceHolder from "./cardHolder/SkeletonPlaceHolder";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/skeleton-holder" element={<OnlySkeletonHolder />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <SkeletonPlaceHolder />
+    </div>
   );
 }
 
