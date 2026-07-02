@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import StatsCard from './StatsCard';
 import StatsCardPlaceholder from '../shared_components/utilities/StatsCardPlaceholder';
 import useWebsiteStats from '../../hooks/queries/website_stats/useWebsiteStats';
-import { faClock, faLandmark, faPeopleLine, faSitemap, faUsers, faVideo, faClapperboard } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faLandmark, faPeopleLine, faSitemap, faUsers, faVideo,  faPodcast} from "@fortawesome/free-solid-svg-icons";
 
 export default function WebsiteStats() {
 
@@ -49,7 +49,6 @@ export default function WebsiteStats() {
                     title="Ministries"
                     obj={getVal("ministry_count")}
                     icon={faLandmark}
-
                 />
             </Col>
 
@@ -61,7 +60,6 @@ export default function WebsiteStats() {
                     title="Organizations"
                     obj={getVal("organization_count")}
                     icon={faSitemap}
-
                 />
             </Col>
 
@@ -72,8 +70,7 @@ export default function WebsiteStats() {
                 <StatsCard
                     title="Meetings Hosted"
                     obj={getVal("total_meetings")}
-                    icon={faClapperboard}
-
+                    icon={faPodcast}
                 />
             </Col>
 
@@ -85,7 +82,6 @@ export default function WebsiteStats() {
                     title="Conference Hours"
                     obj={getVal("total_duration")}
                     icon={faClock}
-
                 />
             </Col>
 
@@ -102,4 +98,4 @@ export default function WebsiteStats() {
 
         </Row>
     );
-};
+}
