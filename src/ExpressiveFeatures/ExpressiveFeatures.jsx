@@ -1,0 +1,44 @@
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import "./style.css";
+
+const features = [
+  "Public/Private Chat",
+  "HD Videoconferencing",
+  "Upload Presentations",
+  "Live MoM",
+  "Breakout Rooms",
+  "Real Time Polling",
+  "Multi Level Screen Sharing",
+  "Multi User Whiteboard",
+  "Multi User Whiteboard",
+  "Multi User Whiteboard",
+  "Multi User Whiteboard",
+  "Multi User Whiteboard"
+];
+
+export default function ExpressiveFeatures() {
+  return (
+    <section className="feature-section pt-5 pb-6">
+      <Container>
+        <h2 className="feature-title text-center mb-5">
+          Expressive Features
+        </h2>
+
+        <Row className="g-4">
+          {features.map((item, index) => (
+            <Col lg={3} md={6} sm={6} xs={12} key={index}>
+              <Card className="feature-card glass-card">
+                <Card.Body className="d-flex align-items-end justify-content-center">
+                  <h4 className="feature-text text-center mb-0">
+                    {item}
+                  </h4>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
+  );
+}

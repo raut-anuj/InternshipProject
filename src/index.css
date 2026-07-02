@@ -1,20 +1,25 @@
-@import "tailwindcss";
-
 @keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Sahi hai, bas container w-max ho */
 }
 
 .marquee {
   display: flex;
-  width: max-content;
-  animation: marquee 8s linear infinite;
+  width: max-content; /* Ye bahut zaruri hai */
+  animation: marquee 25s linear infinite;
   will-change: transform;
+  /* Isse animation mein 'ease-in-out' nahi hoga, perfect linear chalega */
+  animation-timing-function: linear; 
+}
+/* Hover ya Click karne par animation ruk jayegi */
+.marquee:hover, .marquee:active {
+  animation-play-state: paused;
+}
+
+/* Dragging aur selection band karne ke liye */
+img {
+  pointer-events: none;
+  user-select: none;
 }
 /* 
 @keyframes marquee

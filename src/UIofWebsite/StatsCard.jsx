@@ -45,16 +45,18 @@ export default function StatsCard({ title, obj, icon }) {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             className="holder-card"
         >
-            <div className="holder-icon-wrapper">
-                <FontAwesomeIcon icon={icon} className="holder-icon" />
-            </div>
-
             <div className="holder-content">
-                <div className="holder-number-wrapper">
-                    <span className="holder-number">
-                        {formattedValue}
-                        {safeSuffix}+
-                    </span>
+                <div className="holder-value-wrapper">
+                    <div className="holder-icon-wrapper">
+                        <FontAwesomeIcon icon={icon} className="holder-icon" />
+                    </div>
+
+                    <div className="holder-number-wrapper">
+                        <span className="holder-number">
+                            {formattedValue}
+                            {safeSuffix}+
+                        </span>
+                    </div>
                 </div>
 
                 <h2 className="holder-title">
