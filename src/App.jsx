@@ -68,8 +68,8 @@
 // export default App;
 
 
-import ExpressiveFeatures from "./ExpressiveFeatures/ExpressiveFeatures";
 
+import ExpressiveFeatures from "./ExpressiveFeatures/ExpressiveFeatures"
 function App() {
   return (
     <div>
@@ -77,6 +77,17 @@ function App() {
     </div>
   );
 }
-
 export default App;
+
+
+// import ExpressiveFeaturesNoCard from "./ExpressiveFeaturesNoCard/ExpressiveFeaturesNoCard"
+// function App() {
+//   return (
+//     <div>
+//     <ExpressiveFeaturesNoCard />
+//     </div>
+//   );
+// }
+// export default App;
+
 

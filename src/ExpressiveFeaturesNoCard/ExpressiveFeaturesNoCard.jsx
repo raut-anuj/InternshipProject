@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "./StyleWithCard.css";
+import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComments,
@@ -28,12 +28,12 @@ const features = [
   { text: "Multi User Whiteboard", icon: faChalkboardUser }
 ];
 
-export default function ExpressiveFeatures() {
+export default function ExpressiveFeaturesNoCard() {
   return (
     <section className="feature-section pt-5 pb-6">
       <Container>
         <h2 className="feature-title text-center mb-5">
-          Expressive Features
+          Expressive Features No Card
         </h2>
 
         <Row className="g-4">
@@ -47,6 +47,7 @@ export default function ExpressiveFeatures() {
                 <h4 className="feature-text text-center mb-0">
                   {item.text}
                 </h4>
+
               </Card.Body>
             </Card>
             </Col>
