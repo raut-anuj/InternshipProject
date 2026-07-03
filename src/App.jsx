@@ -68,26 +68,17 @@
 // export default App;
 
 
-
+import ExpressiveFeaturesNoCard from "./ExpressiveFeaturesNoCard/ExpressiveFeaturesNoCard"
 import ExpressiveFeatures from "./ExpressiveFeatures/ExpressiveFeatures"
+import "./App.css";
 function App() {
   return (
     <div>
+    <ExpressiveFeaturesNoCard />
     <ExpressiveFeatures />
     </div>
   );
 }
 export default App;
-
-
-// import ExpressiveFeaturesNoCard from "./ExpressiveFeaturesNoCard/ExpressiveFeaturesNoCard"
-// function App() {
-//   return (
-//     <div>
-//     <ExpressiveFeaturesNoCard />
-//     </div>
-//   );
-// }
-// export default App;
 
 

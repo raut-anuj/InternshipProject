@@ -30,30 +30,36 @@ const features = [
 
 export default function ExpressiveFeaturesNoCard() {
   return (
-    <section className="feature-section pt-5 pb-6">
-      <Container>
-        <h2 className="feature-title text-center mb-5">
-          Expressive Features No Card
-        </h2>
+    <section className="expressive-feature-section pt-5 pb-6">
+    <Container>
+    <h2 className="expressive-feature-title text-center mb-5">
+      Expressive Features No Card
+    </h2>
 
-        <Row className="g-4">
-          {features.map((item, index) => (
-            <Col lg={3} md={6} sm={6} xs={12} key={index}>
-              <Card className="feature-card glass-card">
-              <Card.Body className="d-flex flex-column align-items-center justify-content-center">
-                
-                <FontAwesomeIcon icon={item.icon} size="2x" className="mb-3" />
+    <div className="expressive-title-line"></div>
 
-                <h4 className="feature-text text-center mb-0">
-                  {item.text}
-                </h4>
+    <Row className="g-4">
+      {features.map((item, index) => (
+        <Col lg={3} md={6} sm={6} xs={12} key={index}>
+          <Card className="expressive-feature-card">
+            <Card.Body className="d-flex flex-column align-items-center justify-content-center">
 
-              </Card.Body>
-            </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
+              <FontAwesomeIcon
+                icon={item.icon}
+                size="2x"
+                className="mb-3"
+              />
+
+              <h4 className="expressive-feature-text text-center mb-0">
+                {item.text}
+              </h4>
+
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+  </Container>
+</section>
   );
 }
