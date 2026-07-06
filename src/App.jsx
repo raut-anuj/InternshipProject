@@ -40,7 +40,6 @@ import CardStackCarousel from "./SlidngComponents/CardStackCarousel";
 
 import PhotoSlider from "./ZohoImageSlider/PhotoSlider";
 import ExpressiveFeaturesNoCard from "./ExpressiveFeaturesNoCard/ExpressiveFeaturesNoCard"
-import ExpressiveFeatures from "./ExpressiveFeatures/ExpressiveFeatures"
 import StatsSection from "./ZohoCard/StatsSection"
 import "./App.css";
 
@@ -49,7 +48,6 @@ function App() {
   return (
     <div>
       <PhotoSlider />
-       <ExpressiveFeatures />
       <ExpressiveFeaturesNoCard />
       <StatsSection />
       <Slider />

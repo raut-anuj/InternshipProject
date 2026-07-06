@@ -1,22 +1,43 @@
 import React from "react";
 import NameCard from "./NameCard";
-import "./slider.css"; // 👈 Apni CSS file ko yahan import zaroor karna
+import "./slider.css";
 
 const logos = [
-  "/image/deloitte.png", "/image/icici.png", "/image/johnson.png", 
-  "/image/mahindra.png", "/image/mercede.png", "/image/paper.png", "/image/union.png"
+  { src: "/image/deloitte.png"},
+  { src: "/image/icici.png"},
+  { src: "/image/johnson.png"},
+  { src: "/image/mahindra.png"},
+  { src: "/image/mercede.png"},
+  { src: "/image/paper.png"},
+  { src: "/image/union.png"},
 ];
 
 export default function PhotoSlider() {
-  const items = [...logos, ...logos];
-
   return (
     <section className="slider-section">
+      <h2 className="text-section">Trusted by Leading Brands</h2>
+
       <div className="slider-fade-wrapper">
         <div className="marquee-track">
-          {items.map((item, i) => (
-            <NameCard key={i} src={item} />
-          ))}
+
+          <div className="logos-set">
+            {logos.map((item, index) => (
+              <NameCard
+                key={`set1-${index}`}
+                src={item.src}
+              />
+            ))}
+          </div>
+
+          <div className="logos-set">
+            {logos.map((item, index) => (
+              <NameCard
+                key={`set2-${index}`}
+                src={item.src}
+              />
+            ))}
+          </div>
+
         </div>
       </div>
     </section>

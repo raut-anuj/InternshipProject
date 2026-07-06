@@ -4,40 +4,77 @@
   gap: 24px;
 }
 
+.slider-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
 .arrow-btn {
   width: 48px;
   height: 48px;
-  flex-shrink: 0;
-}
-
-.viewport {
-  width: 1000px;
-  overflow: hidden;
-  padding: 40px 0;
-}
-
-.cards-wrapper {
-  display: flex;
-  transition: transform 0.5s ease;
-  will-change: transform;
-}
-
-.card-item {
-  width: 176px;
-  height: 240px;
-  margin: 0 12px;
-  flex-shrink: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 18px;
+  border-radius: 50%;
 
-  font-size: 30px;
-  font-weight: 600;
+  background: #ffffff;
+  border: 1.5px solid #000;
+
+  color: #000;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  outline: none;
+}
+
+.arrow-btn:hover {
+  background: #ffffff;
+}
+
+.arrow-btn:focus,
+.arrow-btn:active {
+  outline: none;
+  box-shadow: none;
+  background: #ffffff;
+}
+
+.viewport {
+  width: 985px;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+}
+
+.cards-wrapper {
+  display: flex;
+  will-change: transform;
+}
+
+.embla__slide {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-item {
+  width: 176px;
+  height: 200px;
+  margin: 0 12px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border-radius: 18px;
+  text-align: center;
 
   position: relative;
   transition: all 0.5s ease;
@@ -61,7 +98,60 @@
   z-index: 1;
 }
 
-/* 🔥 RESPONSIVE FIX */
+.icon-box {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+}
+
+.feature-icon {
+  font-size: 38px;
+  color: #222;
+}
+
+.feature-title {
+  width: 150px;
+  min-height: 58px;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: center;
+  line-height: 1.3;
+  font-size: 17px;
+  font-weight: 480;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cfcfcf;
+  transition: all 0.3s ease;
+}
+
+.active-dot {
+  background: #000;
+  width: 22px;
+  height: 10px;
+  border-radius: 6px;
+}
+
 @media (max-width: 1200px) {
   .viewport {
     width: 800px;
@@ -72,11 +162,13 @@
   .viewport {
     width: 600px;
   }
+  .embla__slide {
+    flex: 0 0 170px;
+  }
 
   .card-item {
     width: 150px;
     height: 210px;
-    font-size: 22px;
   }
 }
 
@@ -85,16 +177,7 @@
     width: 320px;
     padding: 20px 0;
   }
-
-  .card-item {
-    width: 140px;
-    height: 200px;
-    margin: 0 8px;
-    font-size: 18px;
-  }
-
-  .arrow-btn {
-    width: 40px;
-    height: 40px;
+  .embla__slide {
+    flex: 0 0 150px;
   }
 }
