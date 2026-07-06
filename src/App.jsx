@@ -2,7 +2,7 @@ import LogoCard from "./SlidngComponents/LogoCard";
 import LogoSlider from "./SlidngComponents/LogoSlider";
 import NameCard from "./SlidngComponents/NameCard";
 import NameSlider from "./SlidngComponents/NameSlider";
-import Slider from "./SlidngComponents/Slider";
+import Slider from "./Slider/Slider";
 import GovtStyleSlider from "./SlidngComponents/GovtStyleSlider";
 import FadingLogoSlider from "./SlidngComponents/FadingLogoSlider";
 import DigiCard from "./SlidngComponents/DigiCard";

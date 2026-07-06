@@ -1,0 +1,100 @@
+.slider-container {
+  min-height: 100vh;
+  background: transparent;
+  gap: 24px;
+}
+
+.arrow-btn {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.viewport {
+  width: 1000px;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.cards-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.card-item {
+  width: 176px;
+  height: 240px;
+  margin: 0 12px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.active-card {
+  transform: scale(1.1) translateY(-12px);
+  opacity: 1;
+  z-index: 3;
+}
+
+.middle-card {
+  transform: scale(0.92);
+  opacity: 0.55;
+  z-index: 2;
+}
+
+.back-card {
+  transform: scale(0.82);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* 🔥 RESPONSIVE FIX */
+@media (max-width: 1200px) {
+  .viewport {
+    width: 800px;
+  }
+}
+
+@media (max-width: 991px) {
+  .viewport {
+    width: 600px;
+  }
+
+  .card-item {
+    width: 150px;
+    height: 210px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .viewport {
+    width: 320px;
+    padding: 20px 0;
+  }
+
+  .card-item {
+    width: 140px;
+    height: 200px;
+    margin: 0 8px;
+    font-size: 18px;
+  }
+
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
