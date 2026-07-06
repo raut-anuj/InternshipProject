@@ -1,32 +1,15 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Skeleton from "./reactquery/Skeleton";
-// import SkeletonPlaceHolder from "./cardHolder/SkeletonPlaceHolder";
-
-// function App() {
-//   return (
-//     <div>
-//       <SkeletonPlaceHolder />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-
-
-// import LogoCard from "./SlidngComponents/LogoCard";
-// import LogoSlider from "./SlidngComponents/LogoSlider";
-// import NameCard from "./SlidngComponents/NameCard";
-// import NameSlider from "./SlidngComponents/NameSlider";
-// import Slider from "./SlidngComponents/Slider";
-// import GovtStyleSlider from "./SlidngComponents/GovtStyleSlider";
-// import FadingLogoSlider from "./SlidngComponents/FadingLogoSlider";
-// import DigiCard from "./SlidngComponents/DigiCard";
-// import AdvancedDualSlider from "./SlidngComponents/AdvancedDualSlider";
-// import BrandLogo from "./SlidngComponents/BrandLogo";
-// import BrandSlider from "./SlidngComponents/BrandSlider";
-// import CardStackCarousel from "./SlidngComponents/CardStackCarousel";
+import LogoCard from "./SlidngComponents/LogoCard";
+import LogoSlider from "./SlidngComponents/LogoSlider";
+import NameCard from "./SlidngComponents/NameCard";
+import NameSlider from "./SlidngComponents/NameSlider";
+import Slider from "./SlidngComponents/Slider";
+import GovtStyleSlider from "./SlidngComponents/GovtStyleSlider";
+import FadingLogoSlider from "./SlidngComponents/FadingLogoSlider";
+import DigiCard from "./SlidngComponents/DigiCard";
+import AdvancedDualSlider from "./SlidngComponents/AdvancedDualSlider";
+import BrandLogo from "./SlidngComponents/BrandLogo";
+import BrandSlider from "./SlidngComponents/BrandSlider";
+import CardStackCarousel from "./SlidngComponents/CardStackCarousel";
 
 // function App() {
 //   const brandNames = ["SRM", "CDot", "IIT", "IIM", "MIT", "UPSC", "NEET", "AIMS", ];
@@ -55,30 +38,23 @@
 
 // {Zoho Image.}
 
-// import PhotoSlider from "./ZohoImageSlider/PhotoSlider";
-
-// function App() {
-//   return (
-//     <div>
-//       <PhotoSlider />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
+import PhotoSlider from "./ZohoImageSlider/PhotoSlider";
 import ExpressiveFeaturesNoCard from "./ExpressiveFeaturesNoCard/ExpressiveFeaturesNoCard"
 import ExpressiveFeatures from "./ExpressiveFeatures/ExpressiveFeatures"
+import StatsSection from "./ZohoCard/StatsSection"
 import "./App.css";
+
 function App() {
+
   return (
     <div>
-    <ExpressiveFeaturesNoCard />
-    <ExpressiveFeatures />
+      <PhotoSlider />
+       <ExpressiveFeatures />
+      <ExpressiveFeaturesNoCard />
+      <StatsSection />
+      <Slider />
     </div>
   );
 }
+
 export default App;
-
-

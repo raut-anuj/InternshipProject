@@ -1,0 +1,126 @@
+.stats-section {
+  padding: 70px 0;
+}
+
+.heading {
+  text-align: center;
+  color: black;
+  margin-bottom: 70px;
+}
+
+.heading h1 {
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.green-line {
+  width: 60px;
+  height: 3px;
+  background: #41d449;
+  margin: 25px auto 0;
+}
+
+/* Card */
+
+.stat-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 20px 18px;
+  min-height: 220px;      /* sab cards equal height */
+}
+
+/* Icon */
+
+.stat-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+}
+
+/* Text */
+
+.stat-card p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.35;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 60px;     
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5px;
+  height: 52%;
+  background: black;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+
+  .heading h1 {
+    font-size: 40px;
+  }
+
+  .stat-card {
+    min-height: 190px;
+    margin-bottom: 25px;
+  }
+
+  .stat-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 42px;
+  }
+
+  .stat-card p {
+    font-size: 18px;
+    min-height: 50px;
+  }
+
+  .divider::after {
+    display: none;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .stat-card {
+    min-height: 170px;
+    padding: 15px 10px;
+  }
+
+  .stat-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+    margin-bottom: 12px;
+  }
+
+  .stat-card p {
+    font-size: 15px;
+    min-height: 42px;
+  }
+}

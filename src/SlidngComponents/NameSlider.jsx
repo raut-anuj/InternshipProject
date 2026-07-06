@@ -20,8 +20,7 @@ export default function NameSlider() {
       <div className="overflow-hidden">
         <div className="marquee">
           {items.map((item, i) => (
-            <NameC
-            ard key={i} src={item} />
+            <NameCard key={i} src={item} />
           ))}
         </div>
       </div>
