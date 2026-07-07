@@ -10,37 +10,12 @@
   justify-content: center;
   gap: 24px;
 }
-
-.arrow-btn {
-  width: 48px;
-  height: 48px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: #ffffff;
-  border: 1.5px solid #000;
-
-  color: #000;
-
-  cursor: pointer;
-  transition: all 0.2s ease;
-
-  outline: none;
-}
-
-.arrow-btn:hover {
-  background: #ffffff;
-}
-
-.arrow-btn:focus,
-.arrow-btn:active {
-  outline: none;
-  box-shadow: none;
-  background: #ffffff;
+.expressive-title {
+  width: 55px;
+  height: 3px;
+  background: #ff6b35;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .viewport {
@@ -55,10 +30,18 @@
   will-change: transform;
 }
 
+.font-style {
+  text-align: center;
+}
+
 .embla__slide {
   flex: 0 0 200px;
   display: flex;
   justify-content: center;
+}
+
+.text-style {
+  text-align: center;
 }
 
 .card-item {

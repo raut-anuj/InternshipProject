@@ -73,8 +73,8 @@ const [selectedIndex, setSelectedIndex] = useState(0);
 const autoplay = useRef(
   Autoplay({
     delay: 1000,
-    stopOnInteraction: false,
-    stopOnMouseEnter: true,
+    // stopOnInteraction: false,
+    // stopOnMouseEnter: true,
   })
 );
 
@@ -82,7 +82,8 @@ const [emblaRef, emblaApi] = useEmblaCarousel(
   {
     loop: true,
     align: "center",
-    skipSnaps: false,
+    // skipSnaps: false,
+    // watchDrag: false
   },
   [autoplay.current]
 );
@@ -112,12 +113,9 @@ useEffect(() => {
 
  return (
   <Container className="slider-container">
-
+    <h2 className="text-style">Expressive Feature</h2>
+    <div className="expressive-title"></div>
     <div className="slider-main">
-
-      <Button className="arrow-btn" onClick={prev}>
-        ❮
-      </Button>
 
       <div className="viewport" ref={emblaRef}>
   <div className="cards-wrapper">
@@ -147,10 +145,6 @@ useEffect(() => {
     ))}
   </div>
 </div>
-
-      <Button className="arrow-btn" onClick={next}>
-        ❯
-      </Button>
 
     </div>
 

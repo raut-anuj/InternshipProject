@@ -29,7 +29,7 @@
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: slide 5s linear infinite; 
+  animation: slide 15s linear infinite; 
   will-change: transform;
 }
 .text-section {
