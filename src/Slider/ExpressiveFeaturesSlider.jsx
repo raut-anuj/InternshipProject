@@ -108,7 +108,7 @@ export default function ExpressiveFeaturesSlider() {
   }, [emblaApi]);
 
   return (
-    <Container className="slider-container">
+    <Container className="expressive-features-slider">
       <h2 className="text-style">Expressive Features</h2>
       <div className="expressive-title"></div>
       <div className="slider-main">
