@@ -1,5 +1,4 @@
 .expressive-features-slider {
-  min-height: 100vh;
   background: transparent;
   gap: 24px;
 
@@ -23,6 +22,7 @@
     overflow: hidden;
     padding: 40px 0;
     position: relative;
+    margin: 0 auto;
   }
 
   .cards-wrapper {
@@ -143,6 +143,9 @@
   }
 
   @media (max-width: 991px) {
+    .expressive-features-slider {
+      min-height: auto;
+    }
     .viewport {
       width: 600px;
     }
@@ -158,6 +161,12 @@
   }
 
   @media (max-width: 576px) {
+    .expressive-features-slider {
+      min-height: auto;
+      /* ya */
+      min-height: fit-content;
+    }
+
     .viewport {
       width: 320px;
       padding: 20px 0;
@@ -165,6 +174,11 @@
 
     .embla__slide {
       flex: 0 0 150px;
+    }
+
+    .card-item {
+      width: 130px;
+      height: 180px;
     }
   }
 }

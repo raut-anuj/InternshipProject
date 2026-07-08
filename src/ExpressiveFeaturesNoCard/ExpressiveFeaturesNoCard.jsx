@@ -10,7 +10,7 @@ import {
   faDoorOpen,
   faPoll,
   faDisplay,
-  faChalkboardUser
+  faChalkboardUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 const features = [
@@ -25,41 +25,39 @@ const features = [
   { text: "Multi User Whiteboard", icon: faChalkboardUser },
   { text: "Multi User Whiteboard", icon: faChalkboardUser },
   { text: "Multi User Whiteboard", icon: faChalkboardUser },
-  { text: "Multi User Whiteboard", icon: faChalkboardUser }
+  { text: "Multi User Whiteboard", icon: faChalkboardUser },
 ];
 
 export default function ExpressiveFeaturesNoCard() {
   return (
     <section className="expressive-feature-section pt-5 pb-6">
-    <Container>
-    <h2 className="expressive-feature-title text-center mb-5">
-      Expressive Features No Card
-    </h2>
+      <Container>
+        <h2 className="expressive-feature-title text-center mb-5">
+          Expressive Features No Card
+        </h2>
 
-    <div className="expressive-title-line"></div>
+        <div className="expressive-title-line"></div>
 
-    <Row className="g-4">
-      {features.map((item, index) => (
-        <Col lg={3} md={6} sm={6} xs={12} key={index}>
-          <Card className="expressive-feature-card">
-            <Card.Body className="d-flex flex-column align-items-center justify-content-center">
+        <Row className="g-4">
+          {features.map((item, index) => (
+            <Col lg={3} md={6} sm={6} xs={12} key={index}>
+              <Card className="expressive-feature-card">
+                <Card.Body className="d-flex flex-column align-items-center justify-content-center">
+                  <FontAwesomeIcon
+                    icon={item.icon}
+                    size="2x"
+                    className="mb-3"
+                  />
 
-              <FontAwesomeIcon
-                icon={item.icon}
-                size="2x"
-                className="mb-3"
-              />
-
-              <h4 className="expressive-feature-text text-center mb-0">
-                {item.text}
-              </h4>
-
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
-  </Container>
-</section>
+                  <h4 className="expressive-feature-text text-center mb-0">
+                    {item.text}
+                  </h4>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
   );
 }

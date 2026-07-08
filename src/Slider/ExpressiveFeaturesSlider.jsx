@@ -16,7 +16,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function ExpressiveFeaturesSlider() {
-
   const baseCards = [
     {
       title: "Public/Private Chat",
@@ -73,7 +72,7 @@ export default function ExpressiveFeaturesSlider() {
   const autoplay = useRef(
     Autoplay({
       delay: 1000,
-    })
+    }),
   );
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -81,7 +80,7 @@ export default function ExpressiveFeaturesSlider() {
       loop: true,
       align: "center",
     },
-    [autoplay.current]
+    [autoplay.current],
   );
 
   const next = useCallback(() => {
@@ -112,18 +111,18 @@ export default function ExpressiveFeaturesSlider() {
       <h2 className="text-style">Expressive Features</h2>
       <div className="expressive-title"></div>
       <div className="slider-main">
-
         <div className="viewport" ref={emblaRef}>
           <div className="cards-wrapper">
             {baseCards.map((card, i) => (
               <div className="embla__slide" key={i}>
                 <div
-                  className={`card-item ${i === selectedIndex
-                    ? "active-card"
-                    : Math.abs(i - selectedIndex) === 1
-                      ? "middle-card"
-                      : "back-card"
-                    }`}
+                  className={`card-item ${
+                    i === selectedIndex
+                      ? "active-card"
+                      : Math.abs(i - selectedIndex) === 1
+                        ? "middle-card"
+                        : "back-card"
+                  }`}
                 >
                   <div className="icon-box">
                     <FontAwesomeIcon
@@ -132,28 +131,23 @@ export default function ExpressiveFeaturesSlider() {
                     />
                   </div>
 
-                  <p className="feature-title">
-                    {card.title}
-                  </p>
+                  <p className="feature-title">{card.title}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-
       </div>
 
       <div className="slider-dots">
         {baseCards.map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === selectedIndex ? "active-dot" : ""
-              }`}
+            className={`dot ${index === selectedIndex ? "active-dot" : ""}`}
             onClick={() => emblaApi?.scrollTo(index)}
           />
         ))}
       </div>
-
     </Container>
   );
 }

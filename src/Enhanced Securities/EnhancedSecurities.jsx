@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "./EnhancedSecurities.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShieldHalved,
@@ -28,24 +27,34 @@ const features = [
 
 export default function EnhancedSecurities() {
   return (
-    <section className="expressive-feature-section py-5">
+    <section className="enhanced-securities-section py-5">
       <Container>
-        <h2 className="expressive-feature-title text-center mb-5">
+        <h2 className="enhanced-securities-title text-center mb-5">
           Enhanced Securities
         </h2>
 
         <div className="title-line"></div>
 
-        <Row className="g-4 justify-content-center feature-row">
+        <Row className="g-4 justify-content-center align-items-stretch">
           {features.map((item, index) => (
-            <Col lg={4} md={6} sm={12} xs={12} key={index}>
-              <Card className="expressive-feature-card">
+            <Col
+              lg={4}
+              md={6}
+              sm={12}
+              xs={12}
+              className="d-flex justify-content-center"
+              key={index}
+            >
+              <Card className="enhanced-securities-card">
                 <Card.Body className="text-center">
-                  <FontAwesomeIcon icon={item.icon} className="feature-icon" />
+                  <FontAwesomeIcon
+                    icon={item.icon}
+                    className="enhanced-securities-icon"
+                  />
 
-                  <h3 className="feature-heading">{item.title}</h3>
+                  <h3 className="enhanced-securities-heading">{item.title}</h3>
 
-                  <p className="feature-description">{item.desc}</p>
+                  <p className="enhanced-securities-description">{item.desc}</p>
                 </Card.Body>
               </Card>
             </Col>
