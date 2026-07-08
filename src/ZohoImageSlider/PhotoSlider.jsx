@@ -16,6 +16,7 @@ export default function PhotoSlider() {
   return (
     <section className="slider-section">
       <h2 className="text-section">Trusted by Leading Brands</h2>
+              <div className="title-line"></div>
 
       <div className="slider-fade-wrapper">
         <div className="marquee-track">
