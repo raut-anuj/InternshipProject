@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "./EnhancedSecurities.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShieldHalved,
@@ -26,10 +25,10 @@ const features = [
   },
 ];
 
-export default function EnhancedSecurities() {
+export default function EnhancedSecuritiesCard() {
   return (
-    <section className="enhanced-securities-card">
-      <div className="section">
+    <div className="enhanced-securities-card">
+      <section className="section">
         <Container>
           <h2 className="text-style text-center">
             Enhanced Securities
@@ -37,23 +36,37 @@ export default function EnhancedSecurities() {
 
           <div className="separator"></div>
 
-          <Row className="g-4 justify-content-center">
+          <Row className="g-4 justify-content-center align-items-stretch">
             {features.map((item, index) => (
-              <Col lg={4} md={6} sm={12} xs={12} key={index}>
+              <Col
+                lg={4}
+                md={6}
+                sm={12}
+                xs={12}
+                className="d-flex justify-content-center"
+                key={index}
+              >
                 <Card className="card">
                   <Card.Body className="text-center">
-                    <FontAwesomeIcon icon={item.icon} className="icon" />
+                    <FontAwesomeIcon
+                      icon={item.icon}
+                      className="icon"
+                    />
 
-                    <h3 className="heading">{item.title}</h3>
+                    <h2 className="heading">
+                      {item.title}
+                    </h2>
 
-                    <p className="description">{item.desc}</p>
+                    <p className="description">
+                      {item.desc}
+                    </p>
                   </Card.Body>
                 </Card>
               </Col>
             ))}
           </Row>
         </Container>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
