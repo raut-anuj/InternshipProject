@@ -3,9 +3,9 @@ import Placeholder from "react-bootstrap/Placeholder";
 
 export default function StatsCardPlaceholder() {
   return (
-    <div className="holder-card holder-placeholder">
-      <div className="holder-placeholder-number"></div>
-      <div className="holder-placeholder-title"></div>
+    <div className="card placeholder">
+      <div className="placeholder-number"></div>
+      <div className="placeholder-title"></div>
     </div>
   );
-} 
+}

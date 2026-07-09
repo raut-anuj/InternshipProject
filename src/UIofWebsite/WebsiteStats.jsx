@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import StatsCard from "./StatsCard";
-import StatsCardPlaceholder from "../shared_components/utilities/StatsCardPlaceholder";
-import useWebsiteStats from "../../hooks/queries/website_stats/useWebsiteStats";
+import StatsCardPlaceholder from "./StatsCardPlaceholder";
+import useWebsiteStats from "../api/useWebsiteStats";
+
 import {
   faClock,
   faLandmark,
@@ -12,7 +13,7 @@ import {
   faVideo,
   faHandshake,
 } from "@fortawesome/free-solid-svg-icons";
- 
+
 export default function WebsiteStats() {
   const { data: websiteStatsData, isLoading: websiteStatsLoading } =
     useWebsiteStats();
@@ -20,12 +21,12 @@ export default function WebsiteStats() {
   if (websiteStatsLoading) {
     return (
       <div className="website-stats">
-        <Row className="holder-row holder-placeholder-row justify-content-center">
+        <Row className="holder-row placeholder-row justify-content-center">
           {Array.from({ length: 6 }).map((_, index) => (
             <Col
               key={`stats-placeholder-${index}`}
               xs="auto"
-              className="holder-placeholder-col d-flex justify-content-center"
+              className="placeholder-col d-flex justify-content-center"
             >
               <StatsCardPlaceholder />
             </Col>
@@ -40,10 +41,10 @@ export default function WebsiteStats() {
 
   return (
     <div className="website-stats">
-      <Row className="website-stats holder-row holder-placeholder-row justify-content-center">
+      <Row className="website-stats holder-row placeholder-row justify-content-center">
         <Col
           xs="auto"
-          className="holder-placeholder-col d-flex justify-content-center"
+          className="placeholder-col d-flex justify-content-center"
         >
           <StatsCard
             title="Platform Users"
@@ -54,7 +55,7 @@ export default function WebsiteStats() {
 
         <Col
           xs="auto"
-          className="holder-placeholder-col d-flex justify-content-center"
+          className="placeholder-col d-flex justify-content-center"
         >
           <StatsCard
             title="Ministries"
@@ -65,7 +66,7 @@ export default function WebsiteStats() {
 
         <Col
           xs="auto"
-          className="holder-placeholder-col d-flex justify-content-center"
+          className="placeholder-col d-flex justify-content-center"
         >
           <StatsCard
             title="Organizations"
@@ -76,7 +77,7 @@ export default function WebsiteStats() {
 
         <Col
           xs="auto"
-          className="holder-placeholder-col d-flex justify-content-center"
+          className="placeholder-col d-flex justify-content-center"
         >
           <StatsCard
             title="Meetings Hosted"
@@ -87,7 +88,7 @@ export default function WebsiteStats() {
 
         <Col
           xs="auto"
-          className="holder-placeholder-col d-flex justify-content-center"
+          className="placeholder-col d-flex justify-content-center"
         >
           <StatsCard
             title="Conference Hours"
@@ -98,7 +99,7 @@ export default function WebsiteStats() {
 
         <Col
           xs="auto"
-          className="holder-placeholder-col d-flex justify-content-center"
+          className="placeholder-col d-flex justify-content-center"
         >
           <StatsCard
             title="Participants Connected"
