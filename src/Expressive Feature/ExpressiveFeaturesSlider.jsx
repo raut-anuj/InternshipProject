@@ -66,7 +66,7 @@ export default function ExpressiveFeaturesSlider() {
       icon: faChartSimple,
     },
   ];
- 
+
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const autoplay = useRef(
