@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import StatsCard from "./StatsCard";
-import StatsCardPlaceholder from "../shared_components/utilities/StatsCardPlaceholder";
-import useWebsiteStats from "../../hooks/queries/website_stats/useWebsiteStats";
+import StatsCardPlaceholder from "./StatsCardPlaceholder";
+import useWebsiteStats from "../../api/useWebsiteStats";
+
 import {
   faClock,
   faLandmark,
@@ -110,4 +111,3 @@ export default function WebsiteStats() {
     </div>
   );
 }
-
