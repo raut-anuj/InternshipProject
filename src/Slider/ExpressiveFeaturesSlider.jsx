@@ -66,7 +66,7 @@ export default function ExpressiveFeaturesSlider() {
       icon: faChartSimple,
     },
   ];
-
+ 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const autoplay = useRef(
@@ -79,6 +79,7 @@ export default function ExpressiveFeaturesSlider() {
     {
       loop: true,
       align: "center",
+      watchDrag: false,
     },
     [autoplay.current],
   );
@@ -107,47 +108,49 @@ export default function ExpressiveFeaturesSlider() {
   }, [emblaApi]);
 
   return (
-    <Container className="expressive-features-slider">
-      <h2 className="text-style">Expressive Features</h2>
-      <div className="expressive-title"></div>
-      <div className="slider-main">
-        <div className="viewport" ref={emblaRef}>
-          <div className="cards-wrapper">
-            {baseCards.map((card, i) => (
-              <div className="embla__slide" key={i}>
-                <div
-                  className={`card-item ${
-                    i === selectedIndex
-                      ? "active-card"
-                      : Math.abs(i - selectedIndex) === 1
-                        ? "middle-card"
-                        : "back-card"
-                  }`}
-                >
-                  <div className="icon-box">
-                    <FontAwesomeIcon
-                      icon={card.icon}
-                      className="feature-icon"
-                    />
-                  </div>
+    <div className="expressive-features">
+      <Container className="expressive-features-slider">
+        <h2 className="text-style">Expressive Features</h2>
+        <div className="separator"></div>
+        <div className="slider">
+          <div className="viewport" ref={emblaRef}>
+            <div className="cards-wrapper">
+              {baseCards.map((card, i) => (
+                <div className="slide" key={i}>
+                  <div
+                    className={`card ${
+                      i === selectedIndex
+                        ? "active-card"
+                        : Math.abs(i - selectedIndex) === 1
+                          ? "middle-card"
+                          : "back-card"
+                    }`}
+                  >
+                    <div className="icon">
+                      <FontAwesomeIcon
+                        icon={card.icon}
+                        // className="feature-icon"
+                      />
+                    </div>
 
-                  <p className="feature-title">{card.title}</p>
+                    <p className="title">{card.title}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="slider-dots">
-        {baseCards.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === selectedIndex ? "active-dot" : ""}`}
-            onClick={() => emblaApi?.scrollTo(index)}
-          />
-        ))}
-      </div>
-    </Container>
+        <div className="slider-dots">
+          {baseCards.map((_, index) => (
+            <span
+              key={index}
+              className={`dot ${index === selectedIndex ? "active-dot" : ""}`}
+              onClick={() => emblaApi?.scrollTo(index)}
+            />
+          ))}
+        </div>
+      </Container>
+    </div>
   );
 }

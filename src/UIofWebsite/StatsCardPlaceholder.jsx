@@ -8,4 +8,4 @@ export default function StatsCardPlaceholder() {
       <div className="holder-placeholder-title"></div>
     </div>
   );
-}
+} 

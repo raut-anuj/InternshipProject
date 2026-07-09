@@ -1,155 +1,59 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import "./EnhancedSecurities.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState, useEffect, useCallback, useRef } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 import {
-  faComments,
-  faVideo,
-  faUpload,
-  faFileLines,
-  faDoorOpen,
-  faChartSimple,
-  faDesktop,
-  faChalkboardUser,
+  faShieldHalved,
+  faEye,
+  faUserLock,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function ExpressiveFeaturesSlider() {
-  const baseCards = [
-    {
-      title: "Public/Private Chat",
-      icon: faComments,
-    },
-    {
-      title: "HD Videoconferencing",
-      icon: faVideo,
-    },
-    {
-      title: "Upload Presentations",
-      icon: faUpload,
-    },
-    {
-      title: "Live MoM",
-      icon: faFileLines,
-    },
-    {
-      title: "Breakout Rooms",
-      icon: faDoorOpen,
-    },
-    {
-      title: "Public/Private Chat",
-      icon: faComments,
-    },
-    {
-      title: "Real Time Polling",
-      icon: faChartSimple,
-    },
-    {
-      title: "Multi Level Screen Sharing",
-      icon: faDesktop,
-    },
-    {
-      title: "Upload Presentations",
-      icon: faUpload,
-    },
-    {
-      title: "Multi Level Screen Sharing",
-      icon: faDesktop,
-    },
-    {
-      title: "Multi User Whiteboard",
-      icon: faChalkboardUser,
-    },
-    {
-      title: "Real Time Polling",
-      icon: faChartSimple,
-    },
-  ];
+const features = [
+  {
+    title: "Encrypted Channels",
+    desc: "TLS v1.3 based encrypted HTTPS channels for secured transmissions of multiplexed data stream containing audio, video, screenshot etc.",
+    icon: faShieldHalved,
+  },
+  {
+    title: "Moderated Rooms",
+    desc: "Invite driven videoconferencing rooms created and administered by the moderator. Privileges for various actions are granted by the moderator.",
+    icon: faEye,
+  },
+  {
+    title: "User Authentication",
+    desc: "User ID and Password based user authentication before allowing anyone to setup a Video Conference and sharing invitations with other members.",
+    icon: faUserLock,
+  },
+];
 
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const autoplay = useRef(
-    Autoplay({
-      delay: 1000,
-    }),
-  );
-
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    {
-      loop: true,
-      align: "center",
-    },
-    [autoplay.current],
-  );
-
-  const next = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-
-  const prev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-
-    const onSelect = () => {
-      setSelectedIndex(emblaApi.selectedScrollSnap());
-    };
-
-    emblaApi.on("select", onSelect);
-    onSelect();
-
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
-  }, [emblaApi]);
-
+export default function EnhancedSecurities() {
   return (
-    <div className="expressive-features-slider">
-      <Container className="slider-container">
-        <h2 className="text-style">Expressive Features</h2>
-        <div className="separator"></div>
-        <div className="slider-main">
-          <div className="viewport" ref={emblaRef}>
-            <div className="cards-wrapper">
-              {baseCards.map((card, i) => (
-                <div className="embla__slide" key={i}>
-                  <div
-                    className={`card-item ${
-                      i === selectedIndex
-                        ? "active-card"
-                        : Math.abs(i - selectedIndex) === 1
-                          ? "middle-card"
-                          : "back-card"
-                    }`}
-                  >
-                    <div className="icon-box">
-                      <FontAwesomeIcon
-                        icon={card.icon}
-                        className="feature-icon"
-                      />
-                    </div>
+    <section className="enhanced-securities-card">
+      <div className="section">
+        <Container>
+          <h2 className="text-style text-center">
+            Enhanced Securities
+          </h2>
 
-                    <p className="feature-title">{card.title}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+          <div className="separator"></div>
 
-        <div className="slider-dots">
-          {baseCards.map((_, index) => (
-            <span
-              key={index}
-              className={`dot ${index === selectedIndex ? "active-dot" : ""}`}
-              onClick={() => emblaApi?.scrollTo(index)}
-            />
-          ))}
-        </div>
-      </Container>
-    </div>
+          <Row className="g-4 justify-content-center">
+            {features.map((item, index) => (
+              <Col lg={4} md={6} sm={12} xs={12} key={index}>
+                <Card className="card">
+                  <Card.Body className="text-center">
+                    <FontAwesomeIcon icon={item.icon} className="icon" />
+
+                    <h3 className="heading">{item.title}</h3>
+
+                    <p className="description">{item.desc}</p>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </div>
+    </section>
   );
 }

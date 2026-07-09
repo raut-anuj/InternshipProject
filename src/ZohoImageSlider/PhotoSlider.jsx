@@ -1,7 +1,6 @@
 import React from "react";
 import NameCard from "./NameCard";
-import "./slider.css";
-
+ 
 const logos = [
   { src: "/image/deloitte.png" },
   { src: "/image/icici.png" },
@@ -14,25 +13,27 @@ const logos = [
 
 export default function PhotoSlider() {
   return (
-    <section className="slider-section">
-      <h2 className="text-section">Trusted by Leading Brands</h2>
-              <div className="title-line"></div>
+    <div className="photo-slider">
+      <section className="slider-section">
+        <h2 className="text-style">Trusted by Leading Brands</h2>
+        <div className="separator"></div>
 
-      <div className="slider-fade-wrapper">
-        <div className="marquee-track">
-          <div className="logos-set">
-            {logos.map((item, index) => (
-              <NameCard key={`set1-${index}`} src={item.src} />
-            ))}
-          </div>
+        <div className="slider-fade">
+          <div className="slider-fade marquee-track">
+            <div className="logo">
+              {logos.map((item, index) => (
+                <NameCard key={`set1-${index}`} src={item.src} />
+              ))}
+            </div>
 
-          <div className="logos-set">
-            {logos.map((item, index) => (
-              <NameCard key={`set2-${index}`} src={item.src} />
-            ))}
+            <div className="logo">
+              {logos.map((item, index) => (
+                <NameCard key={`set2-${index}`} src={item.src} />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
