@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from "./App";
 import "./index.css";
 
-import { QueryClient, QueryClientProvider } from "./utils/reactQuery";
+import { QueryClient, QueryClientProvider } from "./MyLocal/utils/reactQuery";
 
 const queryClient = new QueryClient();
 
