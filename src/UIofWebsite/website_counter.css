@@ -4,7 +4,7 @@
     padding: 1rem;
   }
  
-  .holder-card {
+  .card {
     width: 90%;
     min-height: 10.3rem;
     padding: 1.5rem 1rem;
@@ -12,7 +12,6 @@
     border-radius: 0.75rem;
     background: #fff;
     box-shadow: 0.25rem 0.375rem 0.625rem 0 rgba(0, 0, 0, 0.15);
-
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: 3fr 1fr;
@@ -20,15 +19,14 @@
     justify-content: center;
     justify-items: center;
     row-gap: 0;
-
     transition: 0.5s;
   }
 
-  .holder-card:hover {
+  .card:hover {
     box-shadow: 0.1rem 0.1rem 0.75rem 0.25rem rgba(0, 0, 0, 0.15);
   }
 
-  .holder-value-wrapper {
+  .value-wrapper {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -38,13 +36,13 @@
     height: 100%;
   }
 
-  .holder-icon-wrapper {
+  .icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .holder-icon {
+  .icon {
     font-size: clamp(1.65rem, 3vw, 2.25rem);
     color: #495057;
     padding-bottom: 0.1rem;
@@ -54,13 +52,13 @@
     display: contents;
   }
 
-  .holder-number-wrapper {
+  .number-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .holder-number {
+  .number {
     font-size: clamp(1.65rem, 3vw, 2.25rem);
     font-weight: 500;
     color: #000;
@@ -68,7 +66,7 @@
     white-space: nowrap;
   }
 
-  .holder-title {
+  .title {
     grid-column: 1;
     grid-row: 2;
     margin: 0;
@@ -80,7 +78,7 @@
     color: #6a6c6f;
   }
 
-  .holder-placeholder-row {
+  .placeholder-row {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 21.25rem));
     gap: 1.25rem 1.75rem;
@@ -88,13 +86,13 @@
     margin: 0 auto;
   }
 
-  .holder-placeholder-col {
+  .placeholder-col {
     width: auto;
     max-width: none;
     padding: 0;
   }
 
-  .holder-placeholder {
+  .placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +101,7 @@
     animation: pulse 1.5s infinite;
   }
 
-  .holder-placeholder-number {
+  .placeholder-number {
     width: 11.25rem;
     height: 1.75rem;
     background: #dcdcdc;
@@ -111,7 +109,7 @@
     margin-bottom: 1.5rem;
   }
 
-  .holder-placeholder-title {
+  .placeholder-title {
     width: 9.rem;
     height: 3.6rem;
     background: #efefef;
@@ -119,73 +117,37 @@
   }
 
   @media (max-width: 900px) {
-    .holder-placeholder-row {
+    .placeholder-row {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.5rem;
       width: 100%;
     }
 
-    .holder-card {
+    .card {
       grid-template-rows: 3fr 1fr;
-      min-height: 11.75rem;
-      padding: 1.5rem 1rem;
     }
 
-    .holder-value-wrapper {
-      gap: 1rem;
-    }
-
-    .holder-placeholder {
-      min-height: 11.75rem;
-    }
-
-    .holder-placeholder-number {
+    .placeholder-number {
       width: 70%;
-      height: 1.25rem;
-      margin-bottom: 1.1rem;
     }
 
-    .holder-placeholder-title {
+    .placeholder-title {
       width: 55%;
-      height: 3rem;
     }
   }
 
    @media (max-width: 575px) {
-    .holder-row {
-      padding: 0.5rem;
-    }
-
-    .holder-placeholder-row {
+    .placeholder-row {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       width: min(calc(100vw - 1rem), 31.25rem);
     }
 
-    .holder-card {
+    .card {
       grid-template-rows: 3fr 1fr;
-      min-height: 9.4rem;
-      padding: 1.25rem 0.75rem;
-    }
-
-    .holder-value-wrapper {
-      gap: 0.5rem;
-    }
-
-    .holder-icon {
-      font-size: 1.45rem;
-    }
-
-    .holder-number {
-      font-size: clamp(1.75rem, 7vw, 2.4rem);
-    }
-
-    .holder-placeholder {
-      min-height: 9.35rem;
     }
   }
 
   @media (max-width: 360px) {
-    .holder-placeholder-row {
+    .placeholder-row {
       grid-template-columns: minmax(0, 1fr);
     }
   }
