@@ -114,7 +114,7 @@
     }
 
     .active-dot {
-      background: #000;
+      background: #555;
       width: 1.3rem;
       height: 0.6rem;
       border-radius: 0.3rem;
