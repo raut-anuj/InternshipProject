@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Placeholder from "react-bootstrap/Placeholder";
 
 export default function StatsCardPlaceholder() {
