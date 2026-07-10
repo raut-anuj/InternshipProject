@@ -1,4 +1,4 @@
-import { useQuery } from "../MyLocal/utils/reactQuery";
+import { useQuery } from "../Archive/utils/reactQuery";
 import { fetchWebsiteStats } from "./usersApi";
 
 const useWebsiteStats = () => {

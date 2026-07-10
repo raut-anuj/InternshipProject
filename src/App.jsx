@@ -1,12 +1,10 @@
-import PhotoSlider from "./ZohoImageSlider/PhotoSlider";
-import Slider from "./Slider/ExpressiveFeaturesSlider";
-import EnhancedSecurities from "./Enhanced Securities/EnhancedSecurities";
-import WebsiteStats from "./MyLocal/UI/WebsiteStats"
 
-import "./Slider/expressive_features_slider.css"
-import "./Enhanced Securities/EnhancedSecurities.css";
-import "./ZohoImageSlider/slider.scss";
-import "./MyLocal/UI/website_counter.css"
+import EnhancedSecurities from "./Enhanced Securities/EnhancedSecuritiesCard";
+import ExpressiveFeaturesSlider from "./Expressive Feature/ExpressiveFeaturesSlider";
+import WebsiteStats from "./Archive/UI/WebsiteStats"
+
+import "./Expressive Feature/expressive_features_slider.css"
+import "./Archive/UI/website_counter.css"
 
 import "./App.css";
 function App() {
@@ -14,9 +12,7 @@ function App() {
   return (
     <div>
       <WebsiteStats />
-      <PhotoSlider />
-      <Slider/>
-      <EnhancedSecurities />
+      <ExpressiveFeaturesSlider/>
     </div>
   );
 }

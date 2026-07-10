@@ -43,7 +43,7 @@
   }
 
   .icon {
-    font-size: clamp(1.65rem, 3vw, 2.25rem);
+    font-size: 2rem;
     color: #495057;
     padding-bottom: 0.1rem;
   }
@@ -59,7 +59,7 @@
   }
 
   .number {
-    font-size: clamp(1.65rem, 3vw, 2.25rem);
+    font-size: 2rem;
     font-weight: 500;
     color: #000;
     line-height: 1;
@@ -72,7 +72,7 @@
     margin: 0;
     text-align: center;
     text-transform: uppercase;
-    font-size: clamp(0.75rem, 1.8vw, 0.8rem);
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.25;
     color: #6a6c6f;
@@ -121,17 +121,8 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       width: 100%;
     }
-
     .card {
       grid-template-rows: 3fr 1fr;
-    }
-
-    .placeholder-number {
-      width: 70%;
-    }
-
-    .placeholder-title {
-      width: 55%;
     }
   }
 
