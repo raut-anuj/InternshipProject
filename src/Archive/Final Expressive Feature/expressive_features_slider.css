@@ -1,0 +1,123 @@
+.expressive-features {
+  .expressive-features-slider {
+    background: transparent;
+    gap: 1.5rem;
+
+    .slider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .separator {
+      width: 3.4rem;
+      height: 0.2rem;
+      background: #ff6b35;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .viewport {
+      width: 61.5rem;
+      overflow: hidden;
+      padding: 2.5rem 0;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .cards-wrapper {
+      display: flex;
+    }
+
+    .slide {
+      flex: 0 0 12.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .text-style {
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .card {
+      width: 11rem;
+      height: 6.5rem;
+      flex-direction: column;
+      align-items: center;
+      border: none !important;
+      background: transparent;
+      text-align: center;
+      transition: all 0.5s ease;
+    }
+
+    .active-card {
+      transform: scale(1.1) translateY(-12px);
+      opacity: 1;
+      z-index: 3;
+    }
+
+    .middle-card {
+      transform: scale(0.92);
+      opacity: 0.55;
+      z-index: 2;
+    }
+
+    .back-card {
+      transform: scale(0.82);
+      opacity: 0.3;
+      z-index: 1;
+    }
+
+    .icon {
+      width: 3.75rem;
+      height: 3.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.1rem;
+      font-size: 2.3rem;
+      color: #222;
+    }
+
+    .title {
+      width: 9.3rem;
+      min-height: 3.6rem;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      line-height: 1.3;
+      font-size: 1rem;
+      font-weight: 480;
+    }
+
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 2rem;
+    }
+
+    .dot {
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      background: #cfcfcf;
+      transition: all 0.3s ease;
+    }
+
+    .active-dot {
+      background: #555;
+      width: 1.3rem;
+      height: 0.6rem;
+      border-radius: 0.3rem;
+    }
+  }
+}
