@@ -1,0 +1,93 @@
+.brands-slider {
+  .slider-section {
+    max-width: 59.3rem;
+    padding: 6rem 0;
+    margin: 0 auto;
+  }
+
+  .separator {
+    width: 3.4rem;
+    height: 0.2rem;
+    background: #ff6b35;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .slider-fade {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 12%,
+      rgba(0, 0, 0, 1) 88%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 12%,
+      rgba(0, 0, 0, 1) 88%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: slide var(--animation-duration, 20s) linear infinite;
+    will-change: transform
+  }
+
+  .text-style {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  .logo-set {
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+    padding-right: 2.1rem;
+  }
+
+  .logo-card {
+    width: 9.5rem;
+    height: 5.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .logo-img {
+    max-width: 7.5rem;
+    max-height: 5rem;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+  }
+}

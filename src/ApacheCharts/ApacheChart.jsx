@@ -17,7 +17,7 @@ export default function BasicChart() {
     series: [
       {
         name: "Students",
-        type: "line",
+        type: "bar",
         data: [200, 600, 500, 373, 800],
       },
     ],
