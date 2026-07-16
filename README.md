@@ -90,8 +90,8 @@ npm install
 **3. Install additional packages** (if not already installed)
 ```bash
 npm install framer-motion@6.5.1
-npm install react-intersection-observer
-npm install embla-carousel-react embla-carousel-autoplay
+npm install react-intersection-observer@10.0.3
+npm install embla-carousel-react@8.6.0 embla-carousel-autoplay@8.6.0
 ```
 
 **4. Run the project**
