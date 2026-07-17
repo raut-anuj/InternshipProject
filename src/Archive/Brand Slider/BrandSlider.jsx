@@ -3,6 +3,7 @@ import { Image } from "react-bootstrap";
 
 export default function BrandsSlider() {
 const logos = [
+  
   // { src: "/image/deloitte.png" },
   // { src: "/image/icici.png" },
   // { src: "/image/johnson.png" },
@@ -12,13 +13,13 @@ const logos = [
   // { src: "/image/union.png" },
   
   
-  // { src: "/image/unionjpg.jpg" }, 
-  // { src: "/image/paperjpg.jpg" },
-  // { src: "/image/deloittejpg.jpg" },
-  // { src: "/image/icicijpg.jpg" },
-  // { src: "/image/johnsonjpg.jpg" },
-  // { src: "/image/mahindrajpg.jpg" },
-  // { src: "/image/mercedejpg.jpg" },
+  { src: "/image/unionjpg.jpg" }, 
+  { src: "/image/paperjpg.jpg" },
+  { src: "/image/deloittejpg.jpg" },
+  { src: "/image/icicijpg.jpg" },
+  { src: "/image/johnsonjpg.jpg" },
+  { src: "/image/mahindrajpg.jpg" },
+  { src: "/image/mercedejpg.jpg" },
 
 
   // { src: "/image/unionjpeg.jpeg" }, 

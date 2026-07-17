@@ -45,11 +45,11 @@ export default function StatsSection() {
     <section className="stats-section">
       <Container>
         <div className="heading">
-          <h1>
+          {/* <h1>
             Made in India.
             <br />
             Made for the World.
-          </h1>
+          </h1> */}
 
           <div className="green-line"></div>
         </div>
