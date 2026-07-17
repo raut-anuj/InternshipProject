@@ -41,30 +41,30 @@ export default function ExpressiveFeaturesSlider() {
       title: "Public/Private Chat",
       icon: faComments,
     },
-    {
-      title: "Real Time Polling",
-      icon: faChartSimple,
-    },
-    {
-      title: "Multi Level Screen Sharing",
-      icon: faDesktop,
-    },
-    {
-      title: "Upload Presentations",
-      icon: faUpload,
-    },
-    {
-      title: "Multi Level Screen Sharing",
-      icon: faDesktop,
-    },
-    {
-      title: "Multi User Whiteboard",
-      icon: faChalkboardUser,
-    },
-    {
-      title: "Real Time Polling",
-      icon: faChartSimple,
-    },
+    // {
+    //   title: "Real Time Polling",
+    //   icon: faChartSimple,
+    // },
+    // {
+    //   title: "Multi Level Screen Sharing",
+    //   icon: faDesktop,
+    // },
+    // {
+    //   title: "Upload Presentations",
+    //   icon: faUpload,
+    // },
+    // {
+    //   title: "Multi Level Screen Sharing",
+    //   icon: faDesktop,
+    // },
+    // {
+    //   title: "Multi User Whiteboard",
+    //   icon: faChalkboardUser,
+    // },
+    // {
+    //   title: "Real Time Polling",
+    //   icon: faChartSimple,
+    // },
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);

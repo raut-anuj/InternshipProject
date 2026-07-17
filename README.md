@@ -66,10 +66,6 @@ src/
 ├── Expressive Feature/
 │   ├── ExpressiveFeaturesSlider.jsx
 │   └── expressive_features_slider.css
-│
-└── Enhanced Securities/
-    ├── EnhancedSecuritiesCard.jsx
-    └── EnhancedSecurities.css
 ```
 
 ---

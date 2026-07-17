@@ -107,6 +107,18 @@ export default function WebsiteStats() {
             icon={faPeopleLine}
           />
         </Col>
+
+        <Col
+          xs="auto"
+          className="placeholder-col d-flex justify-content-center"
+        >
+          <StatsCard
+            title="Participants Connected"
+            obj={getVal("meeting_attendees_count")}
+            icon={faPeopleLine}
+          />
+        </Col>
+
       </Row>
     </div>
   );

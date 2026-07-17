@@ -27,7 +27,7 @@
     max-width: 23rem;
     margin: 0 auto;
     min-height: 21.25rem;
-    background: transparent;
+    background: gray;
     border: none !important;
     box-shadow: none !important;
     transition: transform 0.25s ease;

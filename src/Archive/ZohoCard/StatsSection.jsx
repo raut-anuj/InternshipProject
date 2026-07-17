@@ -1,4 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import Skeleton from "./Skeleton";
 import {
   FaComments,
   FaVideo,
@@ -29,10 +31,19 @@ const stats = [
 ];
 
 export default function StatsSection() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="stats-section">
       <Container>
-
         <div className="heading">
           <h1>
             Made in India.
@@ -44,35 +55,46 @@ export default function StatsSection() {
         </div>
 
         <Row className="justify-content-center g-0 mb-5">
-          {stats.slice(0, 6).map((item, index) => (
-            <Col lg={2} md={4} sm={6} xs={6} key={index}>
-              <div
-                className={`stat-card ${
-                  index !== stats.slice(0, 6).length - 1 ? "divider" : ""
-                }`}
-              >
-                <div className="stat-icon">{item.icon}</div>
-                <p>{item.title}</p>
-              </div>
-            </Col>
-          ))}
+          {loading
+            ? Array.from({ length: stats.slice(0, 6).length }).map((_, index) => (
+                <Col lg={2} md={4} sm={6} xs={6} key={index}>
+                  <Skeleton />
+                </Col>
+              ))
+            : stats.slice(0, 6).map((item, index) => (
+                <Col lg={2} md={4} sm={6} xs={6} key={index}>
+                  <div
+                    className={`stat-card ${
+                      index !== stats.slice(0, 6).length - 1 ? "divider" : ""
+                    }`}
+                  >
+                    <div className="stat-icon">{item.icon}</div>
+                    <p>{item.title}</p>
+                  </div>
+                </Col>
+              ))}
         </Row>
 
         <Row className="justify-content-center g-0">
-          {stats.slice(6).map((item, index) => (
-            <Col lg={2} md={3} sm={6} xs={6} key={index}>
-              <div
-                className={`stat-card ${
-                  index !== stats.slice(6).length - 1 ? "divider" : ""
-                }`}
-              >
-                <div className="stat-icon">{item.icon}</div>
-                <p>{item.title}</p>
-              </div>
-            </Col>
-          ))}
+          {loading
+            ? Array.from({ length: stats.slice(6).length }).map((_, index) => (
+                <Col lg={2} md={3} sm={6} xs={6} key={index}>
+                  <Skeleton />
+                </Col>
+              ))
+            : stats.slice(6).map((item, index) => (
+                <Col lg={2} md={3} sm={6} xs={6} key={index}>
+                  <div
+                    className={`stat-card ${
+                      index !== stats.slice(6).length - 1 ? "divider" : ""
+                    }`}
+                  >
+                    <div className="stat-icon">{item.icon}</div>
+                    <p>{item.title}</p>
+                  </div>
+                </Col>
+              ))}
         </Row>
-
       </Container>
     </section>
   );

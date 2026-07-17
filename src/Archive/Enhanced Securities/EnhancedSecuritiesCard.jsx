@@ -23,6 +23,26 @@ const features = [
     desc: "User ID and Password based user authentication before allowing anyone to setup a Video Conference and sharing invitations with other members.",
     icon: faUserLock,
   },
+  {
+    title: "User Authentication",
+    desc: "User ID and Password based user authentication before allowing anyone to setup a Video Conference and sharing invitations with other members.",
+    icon: faUserLock,
+  },
+  {
+    title: "User Authentication",
+    desc: "User ID and Password based user authentication before allowing anyone to setup a Video Conference and sharing invitations with other members.",
+    icon: faUserLock,
+  },
+  {
+    title: "User Authentication",
+    desc: "User ID and Password based user authentication before allowing anyone to setup a Video Conference and sharing invitations with other members.",
+    icon: faUserLock,
+  },
+  {
+    title: "User Authentication",
+    desc: "User ID and Password based user authentication before allowing anyone to setup a Video Conference and sharing invitations with other members.",
+    icon: faUserLock,
+  }
 ];
 
 export default function EnhancedSecuritiesCard() {

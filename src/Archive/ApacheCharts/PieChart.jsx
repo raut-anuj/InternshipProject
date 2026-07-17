@@ -1,6 +1,6 @@
 import ReactECharts from "echarts-for-react";
 
-export default function BasicChart() {
+export default function PieChart() {
   const option = {
     title: {
       text: "Students Performance",
@@ -17,7 +17,7 @@ export default function BasicChart() {
     series: [
       {
         name: "Students",
-        type: "bar",
+        type: "pie",
         data: [200, 600, 500, 373, 800],
       },
     ],
