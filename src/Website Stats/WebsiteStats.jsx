@@ -14,14 +14,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function WebsiteStats() {
-  const { data: websiteStatsData, isLoading: websiteStatsLoading } =
-    useWebsiteStats();
+  
+  // Flexible from 1 to N
+  const numberOfCards = 6;
+
+  const { data: websiteStatsData, isLoading: websiteStatsLoading } = useWebsiteStats();
 
   if (websiteStatsLoading) {
     return (
       <div className="website-stats">
         <Row className="holder-row placeholder-row justify-content-center">
-          {Array.from({ length: 6 }).map((_, index) => (
+          {Array.from({ length: numberOfCards }).map((_, index) => (
             <Col
               key={`stats-placeholder-${index}`}
               xs="auto"
