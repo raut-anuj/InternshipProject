@@ -13,13 +13,13 @@ const logos = [
   // { src: "/image/union.png" },
   
   
-  { src: "/image/unionjpg.jpg" }, 
-  { src: "/image/paperjpg.jpg" },
-  { src: "/image/deloittejpg.jpg" },
-  { src: "/image/icicijpg.jpg" },
-  { src: "/image/johnsonjpg.jpg" },
-  { src: "/image/mahindrajpg.jpg" },
-  { src: "/image/mercedejpg.jpg" },
+  // { src: "/image/unionjpg.jpg" }, 
+  // { src: "/image/paperjpg.jpg" },
+  // { src: "/image/deloittejpg.jpg" },
+  // { src: "/image/icicijpg.jpg" },
+  // { src: "/image/johnsonjpg.jpg" },
+  // { src: "/image/mahindrajpg.jpg" },
+  // { src: "/image/mercedejpg.jpg" },
 
 
   // { src: "/image/unionjpeg.jpeg" }, 
@@ -30,8 +30,15 @@ const logos = [
   // { src: "/image/mahindrajpeg.jpeg" },
   // { src: "/image/mercedejpeg.jpeg" },
   
-
+  { src: "/image/unionsvg.svg" },
+  { src: "/image/papersvg.svg" },
+  { src: "/image/deloittesvg.svg" },
+  { src: "/image/icicisvg.svg" },
+  { src: "/image/johnsonsvg.svg" },
+  { src: "/image/mahindrasvg.svg" },
+  { src: "/image/mercedessvg.svg" },
 ];
+
 
   const timePerLogo = 2;
   const totalDuration = logos.length * timePerLogo;
