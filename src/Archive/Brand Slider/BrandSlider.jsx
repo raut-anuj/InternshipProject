@@ -36,7 +36,7 @@ const logos = [
   { src: "/image/icicisvg.svg" },
   { src: "/image/johnsonsvg.svg" },
   { src: "/image/mahindrasvg.svg" },
-  { src: "/image/mercedessvg.svg" },
+  { src: "/image/mercedesvg.svg" },
 ];
 
 
