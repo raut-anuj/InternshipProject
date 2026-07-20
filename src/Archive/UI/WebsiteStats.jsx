@@ -41,7 +41,7 @@ export default function WebsiteStats() {
 
   return (
     <div className="website-stats">
-      <Row className="website-stats holder-row placeholder-row justify-content-center">
+      <Row className="website-stats holder-row placeholder-row justify-content-center g-0">
         <Col
           xs="auto"
           className="placeholder-col d-flex justify-content-center"

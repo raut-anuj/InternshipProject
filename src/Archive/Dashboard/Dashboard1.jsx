@@ -4,17 +4,15 @@ import WebsiteStats from "../UI/WebsiteStats";
 
 export default function Dashboard1() {
   return (
-    <Stack direction="horizontal" gap={4} className="align-items-start">
-
-      <Stack gap={3} className="">
+    <Stack direction="horizontal" className="dashboard-container">
+      <Stack direction="vertical" className="chart-section">
         <NestedPieChart />
         <NestedPieChart />
       </Stack>
 
-      <div>
+      <div className="stats-section">
         <WebsiteStats />
       </div>
-
     </Stack>
   );
 }

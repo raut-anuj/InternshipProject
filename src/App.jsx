@@ -1,24 +1,12 @@
-import WebsiteStats from "./Archive/UI/WebsiteStats"
-import "./Archive/UI/website_counter.css"
-
 import Dashboard1 from "./Archive/Dashboard/Dashboard1"
-import Dashboard2 from "./Archive/Dashboard/Dashboard2"
-import "./Archive/Dashboard/style.css"
-
-import BrandSlider from "./Archive/Brand Slider/BrandSlider"
-import "./Archive/Brand Slider/slider.scss"
-
-import StatsSection from "./Archive/ZohoCard/StatsSection"
+import "./Archive/Dashboard/Dashboard1.css";
+import "./Archive/UI/website_stats_card.css"
 
 function App() {
 
   return (
     <div>
-      {/* <Dashboard1 /> */}
-      <Dashboard2 />
-      {/* <BrandSlider /> */}
-      {/* <WebsiteStats /> */}
-      <StatsSection/>
+      <Dashboard1 />
     </div>
   );
 }

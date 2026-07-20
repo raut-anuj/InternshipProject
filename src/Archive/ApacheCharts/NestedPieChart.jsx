@@ -101,7 +101,7 @@ const NestedPieChart = () => {
       option={option}
       style={{
         height: "500px",
-        width: "30rem",
+        width: "100%",
       }}
       notMerge={true}
       lazyUpdate={true}

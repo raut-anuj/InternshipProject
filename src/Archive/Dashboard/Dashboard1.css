@@ -1,0 +1,41 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.chart-section {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 40rem;
+}
+
+.stats-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .chart-section {
+    flex: 0 0 26rem; 
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .chart-section {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .stats-section {
+    flex: 1 1 100%;
+    width: 100%;
+    justify-content: center;
+  }
+}
