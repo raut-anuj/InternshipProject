@@ -108,7 +108,7 @@ export default function WebsiteStats() {
           />
         </Col>
 
-        <Col
+        {/* <Col
           xs="auto"
           className="placeholder-col d-flex justify-content-center"
         >
@@ -117,7 +117,7 @@ export default function WebsiteStats() {
             obj={getVal("meeting_attendees_count")}
             icon={faPeopleLine}
           />
-        </Col>
+        </Col> */}
 
       </Row>
     </div>
