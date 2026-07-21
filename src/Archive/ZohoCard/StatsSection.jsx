@@ -24,10 +24,10 @@ const stats = [
   { icon: <FaDoorOpen />, title: "Breakout Rooms" },
   { icon: <FaPoll />, title: "Real Time Polling" },
 
-  { icon: <FaDesktop />, title: "Multi Level Screen Sharing" },
-  { icon: <FaChalkboardTeacher />, title: "Multi User Whiteboard" },
-  { icon: <FaUsers />, title: "Multi User Management" },
-  { icon: <FaShieldAlt />, title: "Enterprise Security" },
+  // { icon: <FaDesktop />, title: "Multi Level Screen Sharing" },
+  // { icon: <FaChalkboardTeacher />, title: "Multi User Whiteboard" },
+  // { icon: <FaUsers />, title: "Multi User Management" },
+  // { icon: <FaShieldAlt />, title: "Enterprise Security" },
 ];
 
 export default function StatsSection() {
@@ -44,28 +44,30 @@ export default function StatsSection() {
   return (
     <section className="stats-section">
       <Container>
-        <div className="heading">
-          {/* <h1>
+        {/* <div className="heading">
+          <h1>
             Made in India.
             <br />
             Made for the World.
-          </h1> */}
+          </h1>
 
           <div className="green-line"></div>
-        </div>
+        </div> */}
 
         <Row className="justify-content-center g-0 mb-5">
           {loading
-            ? Array.from({ length: stats.slice(0, 6).length }).map((_, index) => (
-                <Col lg={2} md={4} sm={6} xs={6} key={index}>
-                  <Skeleton />
-                </Col>
-              ))
-            : stats.slice(0, 6).map((item, index) => (
-                <Col lg={2} md={4} sm={6} xs={6} key={index}>
+            ? Array.from({ length: stats.slice(0, 4).length }).map(
+                (_, index) => (
+                  <Col lg={3} md={6} sm={6} xs={6} key={index}>
+                    <Skeleton />
+                  </Col>
+                ),
+              )
+            : stats.slice(0, 4).map((item, index) => (
+                <Col lg={3} md={6} sm={6} xs={6} key={index}>
                   <div
                     className={`stat-card ${
-                      index !== stats.slice(0, 6).length - 1 ? "divider" : ""
+                      index !== stats.slice(0, 4).length - 1 ? "divider" : ""
                     }`}
                   >
                     <div className="stat-icon">{item.icon}</div>
@@ -75,26 +77,31 @@ export default function StatsSection() {
               ))}
         </Row>
 
-        <Row className="justify-content-center g-0">
-          {loading
-            ? Array.from({ length: stats.slice(6).length }).map((_, index) => (
-                <Col lg={2} md={3} sm={6} xs={6} key={index}>
-                  <Skeleton />
-                </Col>
-              ))
-            : stats.slice(6).map((item, index) => (
-                <Col lg={2} md={3} sm={6} xs={6} key={index}>
-                  <div
-                    className={`stat-card ${
-                      index !== stats.slice(6).length - 1 ? "divider" : ""
-                    }`}
-                  >
-                    <div className="stat-icon">{item.icon}</div>
-                    <p>{item.title}</p>
-                  </div>
-                </Col>
-              ))}
-        </Row>
+        {/* Sirf yaha change hai */}
+        {stats.slice(4).length > 0 && (
+          <Row className="justify-content-center g-0">
+            {loading
+              ? Array.from({ length: stats.slice(4).length }).map(
+                  (_, index) => (
+                    <Col lg={3} md={6} sm={6} xs={6} key={index}>
+                      <Skeleton />
+                    </Col>
+                  ),
+                )
+              : stats.slice(4).map((item, index) => (
+                  <Col lg={3} md={6} sm={6} xs={6} key={index}>
+                    <div
+                      className={`stat-card ${
+                        index !== stats.slice(4).length - 1 ? "divider" : ""
+                      }`}
+                    >
+                      <div className="stat-icon">{item.icon}</div>
+                      <p>{item.title}</p>
+                    </div>
+                  </Col>
+                ))}
+          </Row>
+        )}
       </Container>
     </section>
   );
