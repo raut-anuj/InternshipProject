@@ -1,7 +1,8 @@
 .dashboard-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: center;  
+  gap: 2rem;                 
   width: 100%;
 }
 
@@ -12,14 +13,15 @@
 }
 
 .stats-section {
-  flex: 1;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .chart-section {
-    flex: 0 0 26rem; 
+    flex: 0 0 26rem;
   }
 }
 

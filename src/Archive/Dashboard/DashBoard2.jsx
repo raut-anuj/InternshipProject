@@ -1,11 +1,29 @@
 import { Stack } from "react-bootstrap";
-import NestedPieChart from "../ApacheCharts/NestedPieChart";
+import Chart from "../ApacheCharts/Chart";
 
-export default function Dashboard1() {
+export default function Dashboard2() {
   return (
-    <Stack direction="horizontal" gap={5} className="justify-content-center">
-      <div className=""><NestedPieChart/></div>
-      <div className=""><NestedPieChart/></div>
+    <Stack
+      direction="horizontal"
+      gap={3}
+      className="justify-content-center flex-wrap"
+    >
+      <div
+        style={{
+          width: "600px",
+          height: "500px",
+        }}
+      >
+        <Chart />
+      </div>
+      <div
+        style={{
+          width: "600px",
+          height: "500px",
+        }}
+      >
+        <Chart />
+      </div>
     </Stack>
   );
 }
