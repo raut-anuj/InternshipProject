@@ -77,7 +77,7 @@
     color: #6a6c6f;
   }
 
-   .placeholder-row {
+  .placeholder-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -86,19 +86,19 @@
     margin: 0 auto;
   }
 
-.placeholder-col {
-  flex: 0 0 20.25rem;
-  max-width: 20.25rem;
-  width: 20.25rem;
-}
+  .placeholder-col {
+    flex: 0 0 20.25rem;
+    max-width: 20.25rem;
+    width: 20.25rem;
+  }
 
   .placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     height: 164px;   
-  min-height: 164px;
+    height: 10.3rem;
+    min-height: 10.3rem;
     animation: pulse 1.5s infinite;
   }
 
@@ -107,13 +107,13 @@
     height: 5rem;
     background: #dcdcdc;
     border-radius: 0.25rem;
-     height: 3.5rem;
+    height: 3.5rem;
     margin-bottom: 1.5rem;
   }
 
   .placeholder-title {
     width: 5.5rem;
-  height: 1rem; 
+    height: 1rem;
     background: #efefef;
     border-radius: 0.25rem;
   }
@@ -124,13 +124,13 @@
       gap: 0.8rem;
     }
     .card {
-  width: 15.225rem;
-}
+      width: 15.25rem;
+    }
 
     .placeholder-col {
-    flex: 0 0 calc(50% - 0.4rem);
-    max-width: 15.225rem;
-  }
+      flex: 0 0 calc(50% - 0.4rem);
+      max-width: 15.25rem;
+    }
 
     .value-wrapper {
       gap: 0.75rem;
@@ -145,13 +145,13 @@
 
     .placeholder-col {
       flex: 0 0 calc(50% - 0.4rem);
-      max-width: 15.225rem;
+      max-width: 15.25rem;
     }
 
-.card {
-  grid-template-rows: 3fr 1fr;
-  width: 15.225rem;
-}
+    .card {
+      grid-template-rows: 3fr 1fr;
+      width: 15.25rem;
+    }
 
     .value-wrapper {
       gap: 0.5rem;
