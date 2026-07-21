@@ -1,43 +1,18 @@
 import React from "react";
 import { Image } from "react-bootstrap";
+import "./slider.scss"
 
 export default function BrandsSlider() {
 const logos = [
   
-  // { src: "/image/deloitte.png" },
-  // { src: "/image/icici.png" },
-  // { src: "/image/johnson.png" },
-  // { src: "/image/mahindra.png" },
-  // { src: "/image/mercede.png" },
-  // { src: "/image/paper.png" },
-  // { src: "/image/union.png" },
-  
-  
-  // { src: "/image/unionjpg.jpg" }, 
-  // { src: "/image/paperjpg.jpg" },
-  // { src: "/image/deloittejpg.jpg" },
-  // { src: "/image/icicijpg.jpg" },
-  // { src: "/image/johnsonjpg.jpg" },
-  // { src: "/image/mahindrajpg.jpg" },
-  // { src: "/image/mercedejpg.jpg" },
-
-
-  // { src: "/image/unionjpeg.jpeg" }, 
-  // { src: "/image/paperjpeg.jpeg" },
-  // { src: "/image/deloittejpeg.jpeg" },
-  // { src: "/image/icicijpeg.jpeg" },
-  // { src: "/image/johnsonjpeg.jpeg" },
-  // { src: "/image/mahindrajpeg.jpeg" },
-  // { src: "/image/mercedejpeg.jpeg" },
-  
-  { src: "/image/unionsvg.svg" },
-  { src: "/image/papersvg.svg" },
-  { src: "/image/deloittesvg.svg" },
-  { src: "/image/icicisvg.svg" },
-  { src: "/image/johnsonsvg.svg" },
-  { src: "/image/mahindrasvg.svg" },
-  { src: "/image/mercedesvg.svg" },
-];
+  { src: "/image/deloitte.png" },
+  { src: "/image/icici.png" },
+  { src: "/image/johnson.png" },
+  { src: "/image/mahindra.png" },
+  { src: "/image/mercede.png" },
+  { src: "/image/paper.png" },
+  { src: "/image/union.png" },
+]
 
 
   const timePerLogo = 2;
