@@ -1,45 +1,28 @@
-import Nav from 'react-bootstrap/Nav';
 import { useState } from "react";
+import Tabs from "react-bootstrap/Tabs";
+import Tab from "react-bootstrap/Tab";
 
 import LineChart from "../ApacheCharts/LineChart";
 import BarChart from "../ApacheCharts/BarChart";
 import PieChart from "../ApacheCharts/PieChart";
-import { NavItem, NavLink } from 'react-bootstrap';
 
 export default function ListExample() {
   const [chart, setChart] = useState("pie");
 
   return (
     <>
-      <Nav activeKey={chart}>
-        <NavItem>
-          <NavLink
-          eventKey="pie"
-          onClick={() => setChart("pie")}
-          >
-            Pie Chart
-          </NavLink>
-        </NavItem>
-
-        <Nav.Item>
-          <Nav.Link
-            eventKey="line"
-            onClick={() => setChart("line")}
-          >
-            Line Chart
-          </Nav.Link>
-        </Nav.Item>
-
-
-        <Nav.Item>
-          <Nav.Link
-            eventKey="bar"
-            onClick={() => setChart("bar")}
-          >
-            Bar Chart
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
+      <div className="d-flex justify-content-center">
+        <Tabs
+          activeKey={chart}
+          onSelect={(k) => setChart(k)}
+          id="chart-tabs"
+          className="mb-3"
+        >
+          <Tab eventKey="pie" title="Pie Chart" />
+          <Tab eventKey="line" title="Line Chart" />
+          <Tab eventKey="bar" title="Bar Chart" />
+        </Tabs>
+      </div>
 
       {chart === "line" && <LineChart />}
       {chart === "bar" && <BarChart />}
