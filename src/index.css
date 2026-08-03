@@ -13,7 +13,7 @@
   /* Isse animation mein 'ease-in-out' nahi hoga, perfect linear chalega */
   animation-timing-function: linear; 
 }
-/* Hover ya Click karne par animation ruk jayegi */
+/* Hover ph Click karne par animation ruk jayegi */
 .marquee:hover, .marquee:active {
   animation-play-state: paused;
 }

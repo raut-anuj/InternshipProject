@@ -9,7 +9,7 @@ A landing page for **CDOT Meet**, a government video conferencing platform, buil
 ###  Landing Page Development
 Built the landing page for CDOT Meet using **React.js** with a modular, component-based structure.
 
-![Landing Page](https://github.com/user-attachments/assets/fb39e4fd-0d6b-4990-95ed-31c507bde5b2)
+![Landing Page](./public/GIF/Laptop.gif)
 
 ---
 
@@ -17,7 +17,7 @@ Built the landing page for CDOT Meet using **React.js** with a modular, componen
 Developed a dynamic **Stats Section** (Active Users, Total Meetings, Total Duration, Meeting Attendees) integrated with **React Query** to fetch live data from the API. Used **React Intersection Observer** to trigger data loading on scroll, with **Skeleton Loaders** for smooth loading states.
 
 
-![Stats Section](https://github.com/user-attachments/assets/c35a9df8-57ae-4929-9697-5169ac695cb4)
+![Stats Section](./public/GIF/Stats.gif)
 
 ---
 
@@ -25,8 +25,7 @@ Developed a dynamic **Stats Section** (Active Users, Total Meetings, Total Durat
 Built an interactive **3D card** using **Embla Carousel** with autoplay, displaying key platform features using **Font Awesome** icons in a clean, responsive layout.
 
 
-![Feature Carousel](
-https://github.com/user-attachments/assets/fb42073c-0fc7-44ef-aab4-1c1ad2d02acf)
+![Feature Carousel](./public/GIF/Features.gif)
 
 ---
 
@@ -34,19 +33,19 @@ https://github.com/user-attachments/assets/fb42073c-0fc7-44ef-aab4-1c1ad2d02acf)
 Built a seamless **auto-scrolling logo marquee** to highlight trusted organizations across India, using **React Bootstrap** for a clean, continuously animated display.
 
 
-![Partner Organizations Slider](https://github.com/user-attachments/assets/533733be-dda3-4547-9fc2-5e047b0c47bb)
+![Partner Organizations Slider](./public/GIF/Organisation.gif)
 
 ---
 
-##  Technologies Used
+## Technologies Used
 
 - React
+- React Bootstrap
 - React Query
 - Embla Carousel
-- Font Awesome
+- Framer Motion
+- React Icons
 - React Intersection Observer
-- React Bootstrap
-
 ---
 
 ##  Project Structure
@@ -64,8 +63,8 @@ src/
 │   └── slider.scss
 │
 ├── Expressive Feature/
-│   ├── ExpressiveFeaturesSlider.jsx
-│   └── expressive_features_slider.css
+    ├── ExpressiveFeaturesSlider.jsx
+    └── expressive_features_slider.css
 ```
 
 ---
