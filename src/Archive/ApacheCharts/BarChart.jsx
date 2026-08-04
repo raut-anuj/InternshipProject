@@ -3,7 +3,6 @@ import ReactECharts from "echarts-for-react";
 export default function BarChart() {
   const option = {
     title: {
-      text: "Students Performance",
     },
 
     tooltip: {},
@@ -26,7 +25,7 @@ export default function BarChart() {
   return (
     <ReactECharts
       option={option}
-      style={{ height: "400px", width: "100%" }}
+      style={{ width: "100%", height: "400px", }}
     />
   );
 }

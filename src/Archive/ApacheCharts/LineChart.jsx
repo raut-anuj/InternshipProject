@@ -3,10 +3,16 @@ import ReactECharts from "echarts-for-react";
 export default function LineChart() {
   const option = {
     title: {
-      text: "Students Performance",
     },
 
     tooltip: {},
+
+    grid: {
+      left: "3%",
+      right: "4%",
+      bottom: "3%",
+      containLabel: true,
+    },
 
     xAxis: {
       data: ["A", "B", "C", "D", "E"],
@@ -26,7 +32,7 @@ export default function LineChart() {
   return (
     <ReactECharts
       option={option}
-      style={{ height: "400px", width: "100%" }}
+      style={{ width: "100%", height: "400px" }}
     />
   );
 }

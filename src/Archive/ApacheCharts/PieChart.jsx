@@ -3,22 +3,27 @@ import ReactECharts from "echarts-for-react";
 export default function PieChart() {
   const option = {
     title: {
-      text: "Students Performance",
     },
 
     tooltip: {},
 
-    xAxis: {
-      data: ["A", "B", "C", "D", "E"],
+    legend: {
+      bottom: 0,
     },
-
-    yAxis: {},
 
     series: [
       {
         name: "Students",
         type: "pie",
-        data: [200, 600, 500, 373, 800],
+        radius: "65%",
+        center: ["50%", "55%"],
+        data: [
+          { value: 200, name: "A" },
+          { value: 600, name: "B" },
+          { value: 500, name: "C" },
+          { value: 373, name: "D" },
+          { value: 800, name: "E" },
+        ],
       },
     ],
   };
@@ -26,7 +31,7 @@ export default function PieChart() {
   return (
     <ReactECharts
       option={option}
-      style={{ height: "400px", width: "100%" }}
+      style={{ width: "100%", height: "400px" }}
     />
   );
 }
