@@ -11,7 +11,7 @@ export default function ListExample() {
 
   return (
     <>
-      <div className="d-flex justify-content-center"> 
+      <div className="d-flex justify-content-center">
         <Tabs
           activeKey={chart}
           onSelect={(k) => setChart(k)}
