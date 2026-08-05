@@ -1,0 +1,304 @@
+{
+    "data": {
+        "period": "January 2026 to July 2026",
+        "data": [
+            {
+                "ministry_id": 1,
+                "ministry_name": "Ministry of Communications",
+                "meetings_count": 7611,
+                "duration_sum": 480609,
+                "participants_sum": 101112,
+                "organizations": [
+                    {
+                        "organization_id": 1,
+                        "organization_name": "C-DOT-Centre for Development of Telematics",
+                        "meetings_count": 2217,
+                        "duration_sum": 151198,
+                        "participants_sum": 12482
+                    },
+                    {
+                        "organization_id": 31,
+                        "organization_name": "DoT - Department of Telecommunications",
+                        "meetings_count": 1823,
+                        "duration_sum": 122078,
+                        "participants_sum": 21875
+                    },
+                    {
+                        "organization_id": 41,
+                        "organization_name": "Department Of Posts",
+                        "meetings_count": 1669,
+                        "duration_sum": 85291,
+                        "participants_sum": 38392
+                    },
+                    {
+                        "organization_id": 35,
+                        "organization_name": "BSNL-Bharat Sanchar Nigam Limited",
+                        "meetings_count": 689,
+                        "duration_sum": 42880,
+                        "participants_sum": 16276
+                    },
+                    {
+                        "organization_id": 36,
+                        "organization_name": "ITI Ltd-Indian Telephone Industries Limited",
+                        "meetings_count": 584,
+                        "duration_sum": 34063,
+                        "participants_sum": 4038
+                    },
+                    {
+                        "organization_id": 32,
+                        "organization_name": "TEC-Telecommunication Engineering Centre",
+                        "meetings_count": 228,
+                        "duration_sum": 13944,
+                        "participants_sum": 2590
+                    },
+                    {
+                        "organization_id": 34,
+                        "organization_name": "BBNL-Bharat Broadband Network Limited",
+                        "meetings_count": 127,
+                        "duration_sum": 12003,
+                        "participants_sum": 1660
+                    },
+                    {
+                        "organization_id": 39,
+                        "organization_name": "TCOE India-Telecom Centres of Excellence India",
+                        "meetings_count": 122,
+                        "duration_sum": 9233,
+                        "participants_sum": 1323
+                    },
+                    {
+                        "organization_id": 45,
+                        "organization_name": "WPC-Wireless Planning and Coordination",
+                        "meetings_count": 48,
+                        "duration_sum": 3957,
+                        "participants_sum": 892
+                    },
+                    {
+                        "organization_id": 37,
+                        "organization_name": "TCIL-Telecommunications Consultants India Ltd.",
+                        "meetings_count": 46,
+                        "duration_sum": 2927,
+                        "participants_sum": 1211
+                    },
+                    {
+                        "organization_id": 40,
+                        "organization_name": "CGCA-Controller General of Communication Accounts",
+                        "meetings_count": 33,
+                        "duration_sum": 1151,
+                        "participants_sum": 135
+                    },
+                    {
+                        "organization_id": 44,
+                        "organization_name": "WMO-Wireless Monitoring Organisation",
+                        "meetings_count": 20,
+                        "duration_sum": 1663,
+                        "participants_sum": 232
+                    },
+                    {
+                        "organization_id": 46,
+                        "organization_name": "NICF-National Institute of Communication Finance",
+                        "meetings_count": 5,
+                        "duration_sum": 221,
+                        "participants_sum": 6
+                    }
+                ]
+            },
+            {
+                "ministry_id": 42,
+                "ministry_name": "Ministry of Railways",
+                "meetings_count": 710,
+                "duration_sum": 63857,
+                "participants_sum": 23604,
+                "organizations": [
+                    {
+                        "organization_id": 117,
+                        "organization_name": "SR-Southern Railway",
+                        "meetings_count": 368,
+                        "duration_sum": 33375,
+                        "participants_sum": 8688
+                    },
+                    {
+                        "organization_id": 131,
+                        "organization_name": "WR-Western Railway",
+                        "meetings_count": 133,
+                        "duration_sum": 5624,
+                        "participants_sum": 1156
+                    },
+                    {
+                        "organization_id": 126,
+                        "organization_name": "NR-Northern Railway ",
+                        "meetings_count": 74,
+                        "duration_sum": 14030,
+                        "participants_sum": 12746
+                    },
+                    {
+                        "organization_id": 127,
+                        "organization_name": "RDSO-Research Designs & Standards Organisation",
+                        "meetings_count": 36,
+                        "duration_sum": 2977,
+                        "participants_sum": 160
+                    },
+                    {
+                        "organization_id": 98,
+                        "organization_name": "Railway Board",
+                        "meetings_count": 23,
+                        "duration_sum": 1821,
+                        "participants_sum": 82
+                    },
+                    {
+                        "organization_id": 128,
+                        "organization_name": "SWR-South Western Railway",
+                        "meetings_count": 22,
+                        "duration_sum": 2647,
+                        "participants_sum": 268
+                    },
+                    {
+                        "organization_id": 125,
+                        "organization_name": "IRISET- Indian Railways Institute of Signal Engineering and Telecommunication",
+                        "meetings_count": 16,
+                        "duration_sum": 1070,
+                        "participants_sum": 140
+                    },
+                    {
+                        "organization_id": 107,
+                        "organization_name": "ECR-East Central Railway",
+                        "meetings_count": 16,
+                        "duration_sum": 527,
+                        "participants_sum": 101
+                    },
+                    {
+                        "organization_id": 105,
+                        "organization_name": "CR-Central Railway",
+                        "meetings_count": 7,
+                        "duration_sum": 943,
+                        "participants_sum": 98
+                    },
+                    {
+                        "organization_id": 129,
+                        "organization_name": "NRHQ -Northern Railway Headquarters Quarter Management System",
+                        "meetings_count": 6,
+                        "duration_sum": 253,
+                        "participants_sum": 9
+                    },
+                    {
+                        "organization_id": 132,
+                        "organization_name": "WCR-Western Central Railway",
+                        "meetings_count": 6,
+                        "duration_sum": 365,
+                        "participants_sum": 143
+                    },
+                    {
+                        "organization_id": 119,
+                        "organization_name": "SCR-South Central Railway",
+                        "meetings_count": 1,
+                        "duration_sum": 118,
+                        "participants_sum": 5
+                    },
+                    {
+                        "organization_id": 115,
+                        "organization_name": "SCR/NED-South Central  Nanded Railway Station",
+                        "meetings_count": 1,
+                        "duration_sum": 21,
+                        "participants_sum": 7
+                    },
+                    {
+                        "organization_id": 103,
+                        "organization_name": "BLW-Banaras Locomotive Works",
+                        "meetings_count": 1,
+                        "duration_sum": 86,
+                        "participants_sum": 1
+                    }
+                ]
+            },
+            {
+                "ministry_id": 30,
+                "ministry_name": "Ministry of Finance",
+                "meetings_count": 472,
+                "duration_sum": 26385,
+                "participants_sum": 6327,
+                "organizations": [
+                    {
+                        "organization_id": 60,
+                        "organization_name": "Chennai Customs",
+                        "meetings_count": 248,
+                        "duration_sum": 12915,
+                        "participants_sum": 863
+                    },
+                    {
+                        "organization_id": 63,
+                        "organization_name": "Department of Revenue",
+                        "meetings_count": 224,
+                        "duration_sum": 13470,
+                        "participants_sum": 5464
+                    }
+                ]
+            },
+            {
+                "ministry_id": 28,
+                "ministry_name": "Ministry of Defence",
+                "meetings_count": 131,
+                "duration_sum": 7819,
+                "participants_sum": 12313,
+                "organizations": [
+                    {
+                        "organization_id": 47,
+                        "organization_name": "Armed Forces",
+                        "meetings_count": 83,
+                        "duration_sum": 5704,
+                        "participants_sum": 12201
+                    },
+                    {
+                        "organization_id": 53,
+                        "organization_name": "DRDO-Defence Research and Development Organisation",
+                        "meetings_count": 36,
+                        "duration_sum": 1500,
+                        "participants_sum": 93
+                    },
+                    {
+                        "organization_id": 48,
+                        "organization_name": "Indian Army",
+                        "meetings_count": 9,
+                        "duration_sum": 497,
+                        "participants_sum": 16
+                    },
+                    {
+                        "organization_id": 50,
+                        "organization_name": "Indian Air Force",
+                        "meetings_count": 3,
+                        "duration_sum": 118,
+                        "participants_sum": 3
+                    }
+                ]
+            },
+            {
+                "ministry_id": 29,
+                "ministry_name": "Ministry of Electronics and Information Technology",
+                "meetings_count": 99,
+                "duration_sum": 5460,
+                "participants_sum": 4123,
+                "organizations": [
+                    {
+                        "organization_id": 54,
+                        "organization_name": "MeitY- Ministry of Electronics and Information Technology",
+                        "meetings_count": 61,
+                        "duration_sum": 4044,
+                        "participants_sum": 2036
+                    },
+                    {
+                        "organization_id": 55,
+                        "organization_name": "NIC-National Informatics Centre",
+                        "meetings_count": 33,
+                        "duration_sum": 1366,
+                        "participants_sum": 2071
+                    },
+                    {
+                        "organization_id": 57,
+                        "organization_name": "CSC-Common Services Centres",
+                        "meetings_count": 5,
+                        "duration_sum": 50,
+                        "participants_sum": 16
+                    }
+                ]
+            }
+        ]
+    }
+}
