@@ -3,7 +3,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function CardStackCarousel({
-  items = [],
+  items = ["CDOT", "DigiLocker", "Google", "NIC", "ZOHO", "Amazon", "Micro."],
   speed = 2400,
   autoplay = true,
 }) {
@@ -27,7 +27,7 @@ export default function CardStackCarousel({
     <div className="relative w-full py-3">
       <button
         onClick={() => emblaApi?.scrollPrev()}
-        className="absolute -left-3 top-1/2 -translate-y-1/2 z-20 bg-white shadow-xl p-2.5 rounded-full border border-gray-100 hover:bg-gray-100 transition-all active:scale-95"
+        className="absolute -left-3 top-1/2 -translate-y-1/2 z-20 bg-transparent shadow-xl p-2.5 rounded-full border border-gray-100 hover:bg-transparent transition-all active:scale-95"
       >
         <FaChevronLeft className="text-gray-700 text-sm" />
       </button>
@@ -45,7 +45,7 @@ export default function CardStackCarousel({
               <div
                 className="
                   h-37.5
-                  bg-gray-200
+                  bg-transparent
                   rounded-xl
                   flex
                   items-center
@@ -71,7 +71,7 @@ export default function CardStackCarousel({
 
       <button
         onClick={() => emblaApi?.scrollNext()}
-        className="absolute -right-3 top-1/2 -translate-y-1/2 z-20 bg-white shadow-xl  p-2.5 rounded-full border border-gray-100 hover:bg-gray-100 transition-all active:scale-95"
+        className="absolute -right-3 top-1/2 -translate-y-1/2 z-20 bg-transparent shadow-xl  p-2.5 rounded-full border border-gray-100 hover:bg-transparent transition-all active:scale-95"
       >
         <FaChevronRight className="text-gray-700 text-sm" />
       </button>

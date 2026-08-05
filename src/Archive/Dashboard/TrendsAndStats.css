@@ -17,19 +17,22 @@
 }
 
 .stats-section {
-  flex: 1 1 18rem;
-  min-width: 0;
+  flex: 1 1 22rem;
+  min-width: 22rem;
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
-  .chart-section {
-    flex: 3 1 18rem;
+@media (min-width:768px) and (max-width:1024px){
+
+    .holder-row{
+      --bs-gutter-x: .75rem;
+      --bs-gutter-y: 1rem;
   }
 
-  .stats-section {
-    flex: 1 1 18rem;
-    min-width: 0;
+  .stats-section{
+      flex:0 1 25rem;
+      min-width:25rem;
   }
+
 }
 
 @media (max-width: 767px) {

@@ -1,6 +1,6 @@
 import { Stack } from "react-bootstrap";
 import ListExample from "../Nav/ListExample"
-import WebsiteStats from "../UI for Charts/WebsiteStats";
+import StatsTab from "../UI for Charts/StatsTab"
 import "./TrendsAndStats.css"
 
 export default function TrendsAndStats() {
@@ -11,7 +11,7 @@ export default function TrendsAndStats() {
   </div>
 
   <div className="stats-section">
-    <WebsiteStats />
+    <StatsTab />
   </div>
 </div>
   );

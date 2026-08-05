@@ -2,7 +2,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useEffect, useCallback, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-export default function Carousel({ items = [], speed = 2000, autoplay = false }) {
+export default function Carousel({  items = ["CDOT", "DigiLocker", "Google", "NIC", "ZOHO", "Amazon", "INC"], speed = 2000, autoplay = false }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     dragFree: true,

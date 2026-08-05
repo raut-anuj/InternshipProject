@@ -32,7 +32,7 @@ const MarqueeRow = ({ items, reverse = false, speed = 25 }) => {
 
 export default function AdvancedDualSlider() {
   return (
-    <div className="w-full py-20 bg-[#fafafa] flex flex-col items-center justify-center overflow-hidden">
+    <div className="w-full py-20 bg-transparent flex flex-col items-center justify-center overflow-hidden">
       
       {/* Premium Header */}
       <div className="text-center mb-12">
