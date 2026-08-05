@@ -4,7 +4,6 @@ import StatsCard from "./StatsCard";
 import StatsCardPlaceholder from "./StatsCardPlaceholder";
 import useWebsiteStats from "../../api/useWebsiteStats";
 import "./website_stats_card.css"
-
 import {
   faClock,
   faLandmark,
@@ -14,7 +13,7 @@ import {
   faHandshake,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function WebsiteStats() {
+export default function StatsTab() {
   const { data: websiteStatsData, isLoading: websiteStatsLoading } =
     useWebsiteStats();
 
@@ -54,55 +53,34 @@ export default function WebsiteStats() {
     },
   ];
 
-  if (websiteStatsLoading) {
-    const placeholders = Array.from({ length: stats.length });
-
-    return (
-      <div className="trends-website-stats">
-        <h2 className="text-style">Platform Highlights</h2>
-        <div className="separator"></div>
-        <Row className="holder-row">
-          {placeholders.map((_, index) => {
-            const isLastSingle =
-              placeholders.length % 2 !== 0 &&
-              index === placeholders.length - 1;
-
-            return (
-              <Col
-                key={index}
-                xs={6}
-                className={`d-flex justify-content-center ${isLastSingle ? "mx-auto" : ""
-                  }`}
-              >
-                <StatsCardPlaceholder />
-              </Col>
-            );
-          })}
-        </Row>
-      </div>
-    );
-  }
+  const items = websiteStatsLoading
+    ? Array.from({ length: stats.length })
+    : stats;
 
   return (
-    <div className="trends-website-stats">
+    <div className="stats-tab">
       <Row className="holder-row">
-        {stats.map((item, index) => {
+        {items.map((item, index) => {
           const isLastSingle =
-            stats.length % 2 !== 0 &&
-            index === stats.length - 1;
+            items.length % 2 !== 0 && index === items.length - 1;
 
           return (
             <Col
               key={index}
               xs={6}
-              className={`d-flex justify-content-center ${isLastSingle ? "mx-auto" : ""
-                }`}
+              className={`d-flex justify-content-center ${
+                isLastSingle ? "mx-auto" : ""
+              }`}
             >
-              <StatsCard
-                title={item.title}
-                obj={item.obj}
-                icon={item.icon}
-              />
+              {websiteStatsLoading ? (
+                <StatsCardPlaceholder />
+              ) : (
+                <StatsCard
+                  title={item?.title}
+                  obj={item?.obj}
+                  icon={item?.icon}
+                />
+              )}
             </Col>
           );
         })}
