@@ -53,12 +53,14 @@ export default function WebsiteStats() {
       icon: faPeopleLine,
     },
   ];
-  
+
   if (websiteStatsLoading) {
-    const placeholders = Array.from({ length: stats.length});
+    const placeholders = Array.from({ length: stats.length });
 
     return (
-      <div className="website-stats">
+      <div className="trends-website-stats">
+        <h2 className="text-style">Platform Highlights</h2>
+        <div className="separator"></div>
         <Row className="holder-row">
           {placeholders.map((_, index) => {
             const isLastSingle =
@@ -69,9 +71,8 @@ export default function WebsiteStats() {
               <Col
                 key={index}
                 xs={6}
-                className={`d-flex justify-content-center ${
-                  isLastSingle ? "mx-auto" : ""
-                }`}
+                className={`d-flex justify-content-center ${isLastSingle ? "mx-auto" : ""
+                  }`}
               >
                 <StatsCardPlaceholder />
               </Col>
@@ -83,7 +84,7 @@ export default function WebsiteStats() {
   }
 
   return (
-    <div className="website-stats">
+    <div className="trends-website-stats">
       <Row className="holder-row">
         {stats.map((item, index) => {
           const isLastSingle =
@@ -94,9 +95,8 @@ export default function WebsiteStats() {
             <Col
               key={index}
               xs={6}
-              className={`d-flex justify-content-center ${
-                isLastSingle ? "mx-auto" : ""
-              }`}
+              className={`d-flex justify-content-center ${isLastSingle ? "mx-auto" : ""
+                }`}
             >
               <StatsCard
                 title={item.title}

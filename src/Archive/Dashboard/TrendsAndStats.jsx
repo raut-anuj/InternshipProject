@@ -1,10 +1,9 @@
 import { Stack } from "react-bootstrap";
 import ListExample from "../Nav/ListExample"
-import WebsiteStats from "../UI/WebsiteStats";
-import "../UI/website_stats_card.css"
-import "./Dashboard1.css"
+import WebsiteStats from "../UI for Charts/WebsiteStats";
+import "./TrendsAndStats.css"
 
-export default function Dashboard1() {
+export default function TrendsAndStats() {
   return (
     <div className="dashboard-container">
   <div className="chart-section">

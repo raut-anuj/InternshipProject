@@ -1,10 +1,29 @@
-.website-stats {
+.trends-website-stats {
   .holder-row {
     padding: 1rem;
     --bs-gutter-x: 0rem;
     --bs-gutter-y: 0.8rem;
   }
 
+  .text-style {
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #555;
+    }
+
+     .separator {
+      width: 3.4rem;
+      height: 0.2rem;
+      background: #ff6b35;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    
   .card {
     width: 11rem;
     height: 9rem;
