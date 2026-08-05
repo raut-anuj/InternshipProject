@@ -4,7 +4,6 @@ import StatsCard from "./StatsCard";
 import StatsCardPlaceholder from "./StatsCardPlaceholder";
 import useWebsiteStats from "../../api/useWebsiteStats";
 import "./website_stats_card.css"
-
 import {
   faClock,
   faLandmark,
