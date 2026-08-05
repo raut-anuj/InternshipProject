@@ -19,7 +19,7 @@ export default function StatsCard({ title, obj, icon }) {
         ? Math.round(count)
         : count.toFixed(2);
 
-     const safeSuffix = obj?.suffix ? `${obj.suffix}+` : "";
+    const safeSuffix = obj?.suffix ?? "";
 
     useEffect(() => {
         if (!inView) {
@@ -54,7 +54,7 @@ export default function StatsCard({ title, obj, icon }) {
                     <div className="number-wrapper">
                         <span className="number">
                             {formattedValue}
-                            {safeSuffix}
+                            {safeSuffix}+
                         </span>
                     </div>
                 </div>
