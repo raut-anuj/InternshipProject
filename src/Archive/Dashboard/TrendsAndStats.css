@@ -4,10 +4,28 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1300px;
+  max-width: 930rem;
   margin: 0 auto;
   gap: clamp(0.8rem, 2vw, 1.5rem);
   box-sizing: border-box;
+}
+
+.separator {
+  width: 3.3rem;
+  height: 0.15rem;
+  background: #ff6b35;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.text-style {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
 }
 
 .chart-section {
@@ -21,18 +39,16 @@
   min-width: 22rem;
 }
 
-@media (min-width:768px) and (max-width:1024px){
-
-    .holder-row{
-      --bs-gutter-x: .75rem;
-      --bs-gutter-y: 1rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .holder-row {
+    --bs-gutter-x: 0.75rem;
+    --bs-gutter-y: 1rem;
   }
 
-  .stats-section{
-      flex:0 1 25rem;
-      min-width:25rem;
+  .stats-section {
+    flex: 0 1 25rem;
+    min-width: 25rem;
   }
-
 }
 
 @media (max-width: 767px) {
