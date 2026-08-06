@@ -9,7 +9,7 @@ A landing page for **CDOT Meet**, a government video conferencing platform, buil
 ###  Landing Page Development
 Built the landing page for CDOT Meet using **React.js** with a modular, component-based structure.
 
-![Landing Page](./public/GIF/Laptop.gif)
+![Landing Page](./public/GIF/Desktop.gif)
 
 ---
 
