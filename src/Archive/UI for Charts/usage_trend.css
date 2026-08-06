@@ -1,0 +1,30 @@
+.trend-chart-tabs {
+  gap: 1rem;
+}
+
+.chart-shell {
+  height: 35rem;
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.chart-canvas {
+  min-width: 0;
+  height: var(--chart-height);
+}
+
+.chart-tooltip__title {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #6b7280;
+  max-width: 240px;
+  word-break: break-word;
+}
+
+.chart-tooltip__divider {
+  margin: 0.25rem 0;
+  border-color: #d1d5db;
+  opacity: 1;
+}
