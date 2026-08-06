@@ -56,7 +56,9 @@ export default function ApacheEchartHomepage({
       currentChart.dispatchAction({
         type: "hideTip",
       });
-      currentChart.setOption(option);
+      currentChart.setOption(option, {
+        replaceMerge: ["graphic"],
+      });
     };
 
     const queueChartUpdate = (callback) => {
@@ -133,6 +135,7 @@ export default function ApacheEchartHomepage({
       },
       {
         title: getChartTitle("Top Ministries"),
+        graphic: [],
       }
     );
 
@@ -228,10 +231,10 @@ export default function ApacheEchartHomepage({
   }, []);
 
   return (
-    <div className="chart-shell w-100 d-flex flex-column overflow-auto">
+    <div className="chart-shell w-100 d-flex flex-column">
       <div
         ref={chartRef}
-        className={`chart-canvas grow w-100 ${className ?? ""}`.trim()}
+        className={`chart-canvas flex-grow-1 w-100 ${className ?? ""}`.trim()}
         style={{
           "--chart-height": `${chartHeight}px`,
         }}
