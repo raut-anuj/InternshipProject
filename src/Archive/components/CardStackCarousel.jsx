@@ -40,7 +40,7 @@ export default function CardStackCarousel({
           {items?.map((item, i) => (
             <div
               key={i}
-              className="flex-[0_0_auto] min-w-[250px] w-fit pl-5"
+              // className="flex-[0_0_auto] min-w-[250px] w-fit pl-5"
             >
               <div
                 className="

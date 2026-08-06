@@ -39,7 +39,7 @@ export default function AdvancedDualSlider() {
         <h3 className="text-gray-400 uppercase tracking-[0.3em] text-xs font-bold mb-3">
           Trusted by Industry Leaders
         </h3>
-        <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+        {/* <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div> */}
       </div>
 
       {/* Main Container with Edge Masking */}

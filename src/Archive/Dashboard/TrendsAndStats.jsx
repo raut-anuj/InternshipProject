@@ -1,6 +1,5 @@
-import { Stack } from "react-bootstrap";
-import ListExample from "../Nav/ListExample"
 import StatsTab from "../UI for Charts/StatsTab"
+import UsageTrend from "../UI for Charts/UsageTrend"
 import "./TrendsAndStats.css"
 
 export default function TrendAndStats() {

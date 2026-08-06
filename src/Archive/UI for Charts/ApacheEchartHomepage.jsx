@@ -7,7 +7,7 @@ import {
   getNoDataGraphic,
   minHeight,
   rowHeight,
-} from "../../shared_components/utilities/ApacheEchartHomepageUtils";
+} from "./ApacheEchartHomepageUtils";
 
 export default function ApacheEchartHomepage({
   isLoading,
@@ -231,7 +231,7 @@ export default function ApacheEchartHomepage({
     <div className="chart-shell w-100 d-flex flex-column overflow-auto">
       <div
         ref={chartRef}
-        className={`chart-canvas flex-grow-1 w-100 ${className ?? ""}`.trim()}
+        className={`chart-canvas grow w-100 ${className ?? ""}`.trim()}
         style={{
           "--chart-height": `${chartHeight}px`,
         }}

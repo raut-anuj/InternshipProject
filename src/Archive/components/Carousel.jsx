@@ -51,7 +51,7 @@ export default function Carousel({  items = ["CDOT", "DigiLocker", "Google", "NI
           {items?.map((item, index) => (
             <div
               key={index}
-              className="flex-[0_0_250px] mx-3 h-[150px] bg-gray-200 rounded-xl flex items-center justify-center"
+              // className="flex-[0_0_250px] mx-3 h-[150px] bg-gray-200 rounded-xl flex items-center justify-center"
             >
               {item}
             </div>
